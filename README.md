@@ -79,7 +79,7 @@ Create cross-platform mobile applications with beautiful interfaces and seamless
 - API integration and offline storage
 - Platform-specific optimizations
 
-[*Detailed App Development Track Information →*](DevLabs-2025/App/README.md)
+[*Detailed App Development Track Information →*](App/README.md)
 
 ### ⚙ Backend Track
 
@@ -94,7 +94,7 @@ Develop robust server-side applications, APIs, and database systems. Learn how t
 - Server-side architecture
 - API testing and documentation
 
-[*Detailed Backend Track Information →*](DevLabs-2025/Backend/README.md)
+[*Detailed Backend Track Information →*](Backend/README.md)
 
 ---
 
@@ -111,7 +111,7 @@ The culmination of the program will be the development of a fully functional mar
 - Admin dashboard for moderation
 - Responsive design for all devices
 
-[*View Project Specifications →*](DevLabs-2025/Project/README.md)
+[*View Project Specifications →*](Project/README.md)
 
 ---
 
