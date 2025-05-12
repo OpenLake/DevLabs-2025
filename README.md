@@ -64,7 +64,7 @@ Build engaging user interfaces and interactive experiences using modern web tech
 - API integration
 - Responsive design principles
 
-[*Detailed Frontend Track Information →*](DevLabs-2025/Frontend/README.md)
+[*Detailed Frontend Track Information →*](Frontend/README.md)
 
 ### 📱 App Development Track
 
