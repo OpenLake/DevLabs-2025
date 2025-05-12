@@ -210,4 +210,4 @@ A: Both! Some exercises will be individual, but the main project will involve te
 
 🚀 Ready to build amazing user interfaces? Let's get started! If you have any questions, reach out to your track mentors or post in our Discord channel.
 
-[← Back to Main README](../../README.md)
+[← Back to Main README](../README.md)

@@ -211,4 +211,4 @@ A: We'll prepare the app for submission, but actual publishing will depend on th
 
 🚀 Ready to build amazing mobile experiences? Let's get started! If you have any questions, reach out to your track mentors or post in our Discord channel.
 
-[← Back to Main README](../../README.md)
+[← Back to Main README](../README.md)
