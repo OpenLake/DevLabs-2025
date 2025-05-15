@@ -97,7 +97,7 @@ Develop robust server-side applications, APIs, and database systems. Learn how t
 [*Detailed Backend Track Information →*](Backend/README.md)
 
 ---
-## 🎯 Final Project: Taskify - Personalized Task Management System
+## 🎯 Final Project: Taskify - Personalized Management System
 
 Taskify is a beginner-friendly task management system designed to help students organize their task and store important notes. This application focuses on simplicity and usability, making it an ideal starting point for developers new to software development.
 

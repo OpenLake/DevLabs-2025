@@ -95,16 +95,15 @@ Next.js is a React framework that enables functionality such as server-side rend
 
 ## 🚀 Project Components
 
-For the IIT Bhilai Marketplace project, the Frontend track will be responsible for:
+For the Taskify project, each track will be responsible for the following components:
 
+### Frontend Track
 - User authentication interface
-- Homepage with featured listings
-- Product listing and search functionality
-- Product detail views
-- User profile management
-- Admin dashboard (for moderators)
+- Dashboard with task and note summaries
+- Task creation and management interface
+- Notes creation and editing system
+- Search and filter functionality
 - Responsive design for all device sizes
-- Messaging interface
 
 ## 👨‍💻 Technical Requirements
 

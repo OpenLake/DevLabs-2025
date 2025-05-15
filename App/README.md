@@ -91,11 +91,11 @@ For the IIT Bhilai Marketplace project, the App Development track will be respon
 
 - Mobile user interface implementation
 - Authentication and user profile screens
-- Product browsing and search functionality
-- Product detail views with image galleries
-- Messaging interface between buyers and sellers
-- Offline capabilities for browsing
-- Push notifications for messages and updates
+- Task and Notes Management UI
+- Offline data synchronization
+- Notification system
+- Local storage management
+- Mobile-optimized UI
 
 ## 👨‍💻 Technical Requirements
 
