@@ -97,23 +97,63 @@ Develop robust server-side applications, APIs, and database systems. Learn how t
 [*Detailed Backend Track Information →*](Backend/README.md)
 
 ---
+## 🎯 Final Project: Taskify - Personalized Task Management System
 
-## 🎯 Final Project: IIT Bhilai Marketplace
-
-The culmination of the program will be the development of a fully functional marketplace platform where IIT Bhilai students, especially graduating seniors, can list second-hand items for sale (books, cycles, electronics, etc.).
+Taskify is a beginner-friendly task management system designed to help students organize their task and store important notes. This application focuses on simplicity and usability, making it an ideal starting point for developers new to software development.
 
 ### 🧰 Key Features
 
-- User authentication and profile management
-- Product listings with images and details
-- Search, filter, and category organization
-- In-app messaging between buyers and sellers
-- Admin dashboard for moderation
-- Responsive design for all devices
+#### Task Management
+- **Create Tasks**: Add new tasks with title, description, due date, and priority level
+- **Update Tasks**: Modify task details as your plans change
+- **Delete Tasks**: Remove completed or unnecessary tasks
+- **Task Status**: Track progress with status options (To Do, Completed)
+- **Priority Levels**: Set importance with visual indicators (High, Medium, Low)
+
+#### Notes System
+- **Create Notes**: Quickly jot down ideas, lecture notes, or reminders
+- **Search Functionality**: Easily find specific notes when needed
+
+#### User Experience
+- **Responsive Design**: Works seamlessly across desktop and mobile devices
+- **User Authentication**: Secure login system for personal data protection
+- **Dark/Light Mode**: Comfortable viewing options for different environments
+
+### 💡 Learning Opportunities
+
+This project offers an excellent opportunity for beginners to:
+
+- Implement CRUD operations (Create, Read, Update, Delete)
+- Work with user authentication and session management
+- Design and develop intuitive user interfaces
+- Create responsive layouts for multiple devices
+- Implement data persistence and storage solutions
+- Practice state management techniques
+- Deploy a complete application
+
+### 🔄 Integration Between Tracks
+
+- **Frontend**: Build an intuitive UI with task/note creation forms, lists, and dashboard components
+- **Backend**: Develop APIs for task/note management, user authentication, and data persistence
+- **Mobile**: Create a responsive mobile experience with offline capabilities
+
+### 🚀 Stretch Goals
+
+For teams or individuals who complete the core features early:
+
+- **Calendar Integration**: View tasks in calendar format
+- **Task Analytics**: Visual representations of completed vs. pending tasks
+- **Collaboration**: Share tasks or notes with other users
+- **Tags & Filters**: Advanced organization with custom tags
+- **Template System**: Create templates for recurring tasks
+- **Rich Text Formatting**: Basic formatting options for better organization
+- **Share Options**: Export notes to common formats (PDF, TXT)
+- **Notifications**: Optional reminders for approaching deadlines
+
+
+This project is specifically designed to be achievable for beginners while still providing valuable learning experiences and resulting in a useful application that students at IIT Bhilai can actually use in their daily lives.
 
 [*View Project Specifications →*](Project/README.md)
-
----
 
 ## 📅 Important Dates
 
