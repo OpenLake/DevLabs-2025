@@ -155,15 +155,6 @@ This project is specifically designed to be achievable for beginners while still
 
 [*View Project Specifications →*](Project/README.md)
 
-## 📅 Important Dates
-
-- *Program Announcement:* TBD
-- *Application Deadline:* TBD
-- *Participant Selection:* TBD
-- *Orientation Session:* TBD
-- *Program Start:* TBD
-- *Final Presentation:* TBD
-
 ---
 
 ## 🤝 How to Participate
@@ -203,9 +194,6 @@ Participants who successfully complete the program will receive:
 For any queries, reach out through:
 
 - Email: openlake@iitbhilai.ac.in
-- Discord: [Join our server](https://discord.gg/openlake)
-- GitHub: [OpenLake Organization](https://github.com/OpenLake)
-- Website: [OpenLake](https://openlakeweb.vercel.app/)
 
 ---
 
