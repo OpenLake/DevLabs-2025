@@ -1,4 +1,4 @@
-## 🌱 Node.js & Express.js Beginner Learning Track
+## 🌱 Node.js & Express.js Learning Track for Taskify
 
 A step-by-step guide to get started with backend development using **Node.js** and **Express.js**.
 
@@ -71,6 +71,10 @@ A step-by-step guide to get started with backend development using **Node.js** a
 * [Thunder Client (VS Code Extension)](https://www.thunderclient.com/)
 * [Postman](https://www.postman.com/)
 
+#### 🔗 Resources:
+
+* [Express.js routing guide](https://expressjs.com/en/guide/routing.html)
+
 ---
 
 ### ✅ Step 4: Middleware & Static Files
@@ -88,7 +92,53 @@ A step-by-step guide to get started with backend development using **Node.js** a
 
 ---
 
-### ✅ Step 5: Simple Project (Capstone)
+### ✅ Step 5: Build an Authentication Service (Login & Signup)
+
+#### 📚 Topics:
+
+* What is authentication & authorization
+* Password hashing using `bcrypt`
+* JSON Web Tokens (JWT)
+* Protecting private routes
+* Token-based user sessions
+
+#### 🛠️ Practice:
+
+* Create `POST /register` and `POST /login` routes
+* Store user data (can use in-memory or simple JSON file)
+* Use `bcrypt` to hash passwords before storing
+* Use `jsonwebtoken` to generate a token during login
+* Create a middleware to verify the token and protect routes like `GET /profile`
+
+#### 📦 Libraries:
+
+```bash
+npm install bcrypt jsonwebtoken
+```
+
+#### 🔐 Folder Structure Suggestion:
+
+```
+auth-app/
+├── controllers/
+│   └── authController.js
+├── routes/
+│   └── authRoutes.js
+├── middleware/
+│   └── authMiddleware.js
+├── app.js
+└── users.json  (or in-memory array for storing user data)
+```
+
+#### 🔗 Resources:
+
+* [JWT Crash Course – Traversy Media](https://www.youtube.com/watch?v=mbsmsi7l3r4)
+* [bcrypt Documentation](https://www.npmjs.com/package/bcrypt)
+* [jsonwebtoken Docs](https://github.com/auth0/node-jsonwebtoken)
+
+---
+
+### ✅ Step 6: Simple Project (Capstone)
 
 #### 💡 Project Idea:
 
