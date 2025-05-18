@@ -18,7 +18,6 @@
 
 ## Boilerplate & Example Projects
 - [FastAPI Starter Template (GitHub)](https://github.com/tiangolo/full-stack-fastapi-postgresql)
-- [Simple FastAPI CRUD Example](https://github.com/codeWithMuh/fastapi-crud)
 
 ---
 
