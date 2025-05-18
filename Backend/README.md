@@ -1,141 +1,199 @@
-# ⚙ Backend Development Track
+# ⚙ Backend Development Track: Taskify
 
-Welcome to the Backend Development track of DevLabs 2025! This track focuses on building robust server-side applications, APIs, and database systems that power web and mobile applications.
+Welcome to the Backend Development track of DevLabs 2025! This track focuses on building the Taskify: Personalized Management System - a robust backend service that powers task management and note-taking applications.
 
 ## 🎯 Track Overview
 
-In this track, you'll learn how to design and implement the server-side components of applications. From API development to database design, authentication systems to deployment, you'll master the skills needed to build scalable and secure backend services.
+In this track, you'll learn how to design and implement the server-side components of the Taskify application. From API development to database design, authentication systems to deployment, you'll master the skills needed to build a scalable and secure backend service for task and note management.
 
 ## 🛠 Technologies
 
-### Node.js
-Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine, enabling server-side execution of JavaScript code. It's widely used for building fast, scalable network applications.
-
-### Express/NestJS
-Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. NestJS is a progressive Node.js framework for building efficient, reliable, and scalable server-side applications.
+### Multiple Backend Frameworks
+We'll explore and implement our backend using three major frameworks:
+- **Node.js/Express**: A lightweight and flexible JavaScript framework
+- **FastAPI**: A modern, fast Python web framework
+- **Spring Boot**: A Java-based framework for creating production-ready applications
 
 ### PostgreSQL
-PostgreSQL is a powerful, open-source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
+PostgreSQL is our chosen database system, offering reliability, feature robustness, and performance for storing your tasks, notes, and user data.
 
 ## 📚 What You'll Learn
 
 - *API Development:* Creating RESTful APIs for client applications
-- *Authentication & Authorization:* Securing applications and implementing user roles
-- *Database Design:* Modeling data and relationships effectively
-- *Data Validation:* Ensuring data integrity and security
+- *Authentication & Authorization:* Implementing JWT-based user authentication
+- *Database Design:* Modeling data relationships for tasks, notes, and users
+- *Data Validation:* Ensuring data integrity with request validation
 - *Error Handling:* Building robust error management systems
 - *Testing:* Writing automated tests for backend functionality
-- *Documentation:* Creating comprehensive API documentation
+- *Documentation:* Creating comprehensive API documentation with OpenAPI/Swagger
 - *Deployment:* Hosting and managing backend services
 - *Performance:* Optimizing for speed and scalability
 
-## 📅 Weekly Schedule
+## 📋 Development Plan
 
-### Week 1: Git & GitHub Fundamentals
+### Version Control & Collaboration
 - Introduction to version control concepts
-- Setting up Git and GitHub account
-- Basic Git commands (clone, add, commit, push, pull)
-- Branching strategies and workflows
-- Creating and reviewing pull requests
-- Resolving merge conflicts
+- Git & GitHub setup and workflow
+- Branching strategies and pull requests
 - Collaborative development practices
+- Merge conflict resolution
 
-### Week 2: Node.js & API Fundamentals
-- JavaScript/TypeScript for backend development
-- Setting up a Node.js environment
+### Framework Foundations & API Development
+- Introduction to our three backend frameworks
+- Setting up development environments
 - HTTP fundamentals and REST principles
-- Creating a basic Express/NestJS server
-- Routing and middleware concepts
+- Basic server creation and routing
+- Middleware concepts and implementation
 - Request/response handling
 - Error handling and logging
-- *Mini-Project:* Basic CRUD API
 
-### Week 3: Database Integration & Authentication
-- Relational database concepts
-- PostgreSQL setup and basics
-- ORM introduction (TypeORM/Prisma)
-- Database schema design
-- Data modeling and relationships
-- User authentication implementation
-- JSON Web Tokens (JWT)
-- *Mini-Project:* Authentication API with database integration
+### Database & Authentication
+- Relational database concepts with PostgreSQL
+- ORM implementation based on framework:
+  - Sequelize/Prisma (Node.js)
+  - SQLAlchemy (FastAPI) 
+  - Spring Data JPA (Spring Boot)
+- Database schema design for Taskify
+- User authentication with JWT
+- Security best practices
 
-### Week 4: Advanced API Development
+### Task & Note Management
+- Entity model development
+- CRUD operations implementation
+- Status tracking for tasks
 - Input validation and sanitization
-- Role-Based Access Control (RBAC)
-- File uploads and storage
-- Rate limiting and security measures
-- API versioning strategies
-- Pagination and filtering
-- Transactions and data integrity
-- *Mini-Project:* Enhanced API with advanced features
+- Access control and authorization
+- Task prioritization system
 
-### Week 5: Testing, Documentation & Deployment
+### Testing, Documentation & Deployment
 - Unit and integration testing
-- Test-driven development practices
+- Test-driven development methodology
 - API documentation with OpenAPI/Swagger
-- Environment configuration
-- Containerization with Docker
-- Deployment strategies
-- Performance monitoring
-- *Mini-Project:* Fully tested and documented API
+- Environment configuration management
+- Docker containerization
+- Deployment pipelines
+- Performance monitoring and optimization
+- Security reviews and hardening
+- Integration with frontend
+- Final deployment and presentation
 
-### Week 6: Project Completion & Integration
-- Integration with frontend and mobile teams
-- Advanced error handling
-- Performance optimization
-- Security reviews
-- Final testing and debugging
-- Project documentation completion
-- Deployment to production environment
-- Final presentation preparation
+## 🚀 Taskify API Overview
 
-## 🚀 Project Components
+Based on the OpenAPI specification, Taskify offers the following core functionalities:
 
-For the IIT Bhilai Marketplace project, the Backend track will be responsible for:
+### Authentication
+- User registration
+- User authentication with JWT tokens
 
-- User authentication and authorization system
-- Product listings API (CRUD operations)
-- Search and filtering functionality
-- Media upload and management
-- Messaging system between users
-- Admin features and moderation tools
-- Analytics and reporting endpoints
+### User Management
+- Get all users
+- Get user by ID
+- Delete user
+
+### Task Management
+- Create tasks with title, description, due date, status, and priority
+- Update existing tasks
+- Mark tasks as done
+- Delete tasks
+- Get task by ID
+- Get all tasks for current user
+
+### Note Management
+- Create notes with title and content
+- Update existing notes
+- Delete notes
+- Get note by ID
+- Get all notes for current user
+
+### System
+- Health check endpoint
 
 ## 👨‍💻 Technical Requirements
 
 - *Architecture:* Clean, layered architecture following best practices
-- *Security:* Proper authentication, authorization, and data protection
+- *Security:* JWT-based authentication and authorization
 - *Performance:* Optimized database queries and response times
 - *Reliability:* Error handling and logging for troubleshooting
 - *Scalability:* Designed to handle growing user base and data
-- *Documentation:* Comprehensive API documentation and setup instructions
+- *Documentation:* Comprehensive API documentation using OpenAPI/Swagger
 
 ## 🔧 Setup Instructions
 
+### Node.js/Express Setup
 1. Ensure you have [Node.js](https://nodejs.org/) (v16 or later) installed
 2. Install [PostgreSQL](https://www.postgresql.org/download/)
 3. Clone the repository:
-   bash
-   git clone https://github.com/OpenLake/devlabs-backend.git
-   cd devlabs-backend
-   
+   ```bash
+   git clone https://github.com/OpenLake/devlabs-taskify-backend-express.git
+   cd devlabs-taskify-backend-express
+   ```
 4. Install dependencies:
-   bash
+   ```bash
    npm install
-   
-5. Set up environment variables (copy from example):
-   bash
+   ```
+5. Set up environment variables:
+   ```bash
    cp .env.example .env
-   
+   ```
 6. Run database migrations:
-   bash
+   ```bash
    npm run migrate
-   
+   ```
 7. Start the development server:
-   bash
+   ```bash
    npm run dev
-   
+   ```
+
+### FastAPI Setup
+1. Ensure you have [Python](https://www.python.org/) (v3.8 or later) installed
+2. Install [PostgreSQL](https://www.postgresql.org/download/)
+3. Clone the repository:
+   ```bash
+   git clone https://github.com/OpenLake/devlabs-taskify-backend-fastapi.git
+   cd devlabs-taskify-backend-fastapi
+   ```
+4. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+5. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+6. Set up environment variables:
+   ```bash
+   cp .env.example .env
+   ```
+7. Run database migrations:
+   ```bash
+   alembic upgrade head
+   ```
+8. Start the development server:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
+
+### Spring Boot Setup
+1. Ensure you have [JDK](https://www.oracle.com/java/technologies/javase-downloads.html) (v17 or later) installed
+2. Install [PostgreSQL](https://www.postgresql.org/download/)
+3. Clone the repository:
+   ```bash
+   git clone https://github.com/OpenLake/devlabs-taskify-backend-spring.git
+   cd devlabs-taskify-backend-spring
+   ```
+4. Build the project:
+   ```bash
+   ./mvnw clean install  # On Windows: mvnw.cmd clean install
+   ```
+5. Set up application properties:
+   ```bash
+   cp src/main/resources/application.properties.example src/main/resources/application.properties
+   ```
+6. Run the application:
+   ```bash
+   ./mvnw spring-boot:run  # On Windows: mvnw.cmd spring-boot:run
+   ```
 
 ## 📚 Learning Resources
 
@@ -144,22 +202,28 @@ For the IIT Bhilai Marketplace project, the Backend track will be responsible fo
 - [HTTP Status Codes](https://httpstatuses.com/)
 - [Web Security Basics](https://developer.mozilla.org/en-US/docs/Web/Security)
 
-### Node.js
+### Node.js/Express
 - [Node.js Documentation](https://nodejs.org/en/docs/)
+- [Express Documentation](https://expressjs.com/)
 - [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices)
 - [JavaScript Clean Code](https://github.com/ryanmcdermott/clean-code-javascript)
 
-### Express/NestJS
-- [Express Documentation](https://expressjs.com/)
-- [NestJS Documentation](https://docs.nestjs.com/)
-- [Express Best Practices](https://expressjs.com/en/advanced/best-practice-performance.html)
+### FastAPI
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [Pydantic](https://docs.pydantic.dev/)
+- [SQLAlchemy](https://www.sqlalchemy.org/)
+- [Alembic for Migrations](https://alembic.sqlalchemy.org/)
+
+### Spring Boot
+- [Spring Boot Documentation](https://spring.io/projects/spring-boot)
+- [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
+- [Spring Security](https://spring.io/projects/spring-security)
+- [Hibernate ORM](https://hibernate.org/orm/)
 
 ### Databases
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 - [SQL Basics](https://www.w3schools.com/sql/)
 - [Database Design Fundamentals](https://www.lucidchart.com/pages/database-diagram/database-design)
-- [TypeORM Documentation](https://typeorm.io/)
-- [Prisma Documentation](https://www.prisma.io/docs/)
 
 ### Authentication & Security
 - [JWT Introduction](https://jwt.io/introduction/)
@@ -167,8 +231,9 @@ For the IIT Bhilai Marketplace project, the Backend track will be responsible fo
 - [Auth0 Blog](https://auth0.com/blog/)
 
 ### Testing
-- [Jest Documentation](https://jestjs.io/docs/getting-started)
-- [Supertest](https://github.com/visionmedia/supertest)
+- [Jest](https://jestjs.io/docs/getting-started) for Node.js
+- [Pytest](https://docs.pytest.org/) for FastAPI
+- [JUnit](https://junit.org/junit5/) for Spring Boot
 - [Test-Driven Development](https://www.agilealliance.org/glossary/tdd/)
 
 ### API Documentation
@@ -189,24 +254,36 @@ For the IIT Bhilai Marketplace project, the Backend track will be responsible fo
 
 1. *Fork & Clone:* Fork the repository and clone it to your local machine
 2. *Branch:* Create a feature branch for your contribution
-   bash
+   ```bash
    git checkout -b feature/your-feature-name
-   
+   ```
 3. *Develop:* Make your changes following the coding standards
 4. *Test:* Write tests for your changes and ensure all tests pass
 5. *Commit:* Use clear, concise commit messages
-   bash
+   ```bash
    git commit -m "feat: add user authentication system"
-   
+   ```
 6. *Push:* Push your changes to your fork
-   bash
+   ```bash
    git push origin feature/your-feature-name
-   
+   ```
 7. *PR:* Submit a pull request with a clear description
 
 ## ❓ FAQ
 
 *Q: Do I need prior backend development experience?*  
-A:
+A: While prior experience is helpful, the track is designed to accommodate beginners with a solid programming foundation. We'll cover the basics of backend development from the ground up.
+
+*Q: Do I need to learn all three frameworks (Node.js/Express, FastAPI, and Spring Boot)?*  
+A: No, you can choose to focus on one framework based on your preference or prior experience. However, understanding the concepts across different frameworks will broaden your knowledge.
+
+*Q: How much time should I dedicate to this track weekly?*  
+A: We recommend dedicating at least 10-15 hours per week to get the most out of this track, including lectures, hands-on coding, and self-study.
+
+*Q: Will we be building the entire application from scratch?*  
+A: Yes, you'll be building the Taskify backend from the ground up, implementing all the required features step by step.
+
+*Q: How will the backend interact with the frontend?*  
+A: The backend will expose RESTful APIs that the frontend teams will consume. We'll have joint sessions to ensure smooth integration between teams.
 
 [← Back to Main README](../README.md)
