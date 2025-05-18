@@ -240,16 +240,6 @@ Based on the OpenAPI specification, Taskify offers the following core functional
 - [OpenAPI/Swagger](https://swagger.io/specification/)
 - [API Documentation Best Practices](https://swagger.io/blog/api-documentation/best-practices-in-api-documentation/)
 
-## 👥 Mentors
-
-- *[Mentor Name]*
-  - GitHub: [@username](https://github.com/username)
-  - Expertise: Node.js, API Development, Database Design
-
-- *[Mentor Name]*
-  - GitHub: [@username](https://github.com/username)
-  - Expertise: Authentication, Security, Testing
-
 ## 🤝 Contribution Guidelines
 
 1. *Fork & Clone:* Fork the repository and clone it to your local machine
