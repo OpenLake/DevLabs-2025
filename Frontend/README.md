@@ -31,7 +31,7 @@ Next.js is a React framework that enables functionality such as server-side rend
 > 📅 Total Duration: 3.5 Weeks  
 > 🎯 Final Goal: Build a fully functional frontend for Taskify using React, integrated with the Taskify backend API.
 
----
+
 
 ## 📍 Phase 1: Web Development Fundamentals (Week 1 to Mid Week 2)
 
@@ -54,7 +54,7 @@ Next.js is a React framework that enables functionality such as server-side rend
 - Interactive form validation
 - To-do list or notes app using plain JavaScript
 
----
+
 
 ## 📍 Phase 2: React + Taskify Development (Mid Week 2 to Week 3.5)
 
@@ -86,7 +86,7 @@ Next.js is a React framework that enables functionality such as server-side rend
 - Persistent login using JWT token
 - Protected views/routes (optional)
 
----
+
 
 ## 📍 Final Deliverables
 
@@ -96,13 +96,15 @@ Next.js is a React framework that enables functionality such as server-side rend
 - Polished UI with responsiveness
 - Deployment-ready frontend (GitHub Pages, Vercel, or Netlify)
 
----
+
 
 ## 🚀 Tips for Success
 
 - Learn by building: every new concept will be taught directly through a Taskify feature.
 - Ask questions — mentors are here to help!
 - Don’t chase perfection on the first try. Build first, polish later.
+
+
 ## 🚀 Project Components
 
 For the Taskify project, each track will be responsible for the following components:
