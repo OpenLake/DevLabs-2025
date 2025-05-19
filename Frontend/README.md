@@ -26,6 +26,14 @@ Next.js is a React framework that enables functionality such as server-side rend
 - *Performance Optimization:* Making your applications fast and responsive
 - *Testing:* Writing tests for your components and functionality
 - *Deployment:* Getting your application online
+
+# 🧠 DevLabs Frontend Learning Timeline (3.5 Weeks)
+
+Welcome to the DevLabs frontend learning track!  
+This timeline is designed for **complete beginners** to learn **HTML, CSS, JavaScript, and React**, and build the **Taskify** web application step-by-step.
+
+---
+
 ## ⏱️ Timeline Overview
 
 > 📅 Total Duration: 3.5 Weeks  
@@ -37,6 +45,7 @@ Next.js is a React framework that enables functionality such as server-side rend
 
 **Duration:** ~1.5 Weeks  
 **Objective:** Build a strong foundation in HTML, CSS, and JavaScript  
+
 
 ### Topics Covered:
 - **HTML**
@@ -97,13 +106,11 @@ Next.js is a React framework that enables functionality such as server-side rend
 - Deployment-ready frontend (GitHub Pages, Vercel, or Netlify)
 
 
-
 ## 🚀 Tips for Success
 
 - Learn by building: every new concept will be taught directly through a Taskify feature.
 - Ask questions — mentors are here to help!
 - Don’t chase perfection on the first try. Build first, polish later.
-
 
 ## 🚀 Project Components
 
@@ -174,15 +181,7 @@ For the Taskify project, each track will be responsible for the following compon
 - [Styled Components](https://styled-components.com/)
 - [CSS Modules](https://github.com/css-modules/css-modules)
 
-## 👥 Mentors
 
-- *[Mentor Name]*
-  - GitHub: [@username](https://github.com/username)
-  - Expertise: React, Next.js, State Management
-
-- *[Mentor Name]*
-  - GitHub: [@username](https://github.com/username)
-  - Expertise: UI/UX, Performance Optimization
 
 ## 🤝 Contribution Guidelines
 
