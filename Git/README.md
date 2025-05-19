@@ -1,7 +1,45 @@
 
-# GitStartedWithUs
+# **Git & GitHub: Week-1**
 
-Welcome to GitStartedWithUs, a collaborative platform for creative individuals to color pixels, leave their mark, and express themselves through art! Here you have the opportunity to contribute to a collective canvas by coloring individual pixels and sharing your unique identity with the world.
+#### **Day 1: Introduction to Git & GitHub**
+
+* What is **Git**? Why use version control?
+* What is **GitHub**?
+* Installing Git and setting up your GitHub account.
+* Basic Git configuration (`git config`).
+* Initialize a repo: `git init`
+* Add and commit changes: `git add`, `git commit`
+* View history: `git log`
+
+#### **Day 2: Core Git Operations**
+* Understand the staging area and commit history.
+* Visualize the Git workflow (Working Directory → Staging Area → Repository).
+* Connecting to GitHub using HTTPS/SSH.
+* `git remote add`, `git push`, `git pull`
+* Creating a repo on GitHub and linking it locally.
+* Syncing changes between local and remote.
+
+#### **Day 3: Pushing and Pulling**
+* What are **Issues** in GitHub?
+* Creating, assigning, and commenting on issues.
+* Labels, milestones, and project boards.
+* Using issues to manage tasks in a collaborative repo.
+* What is a Pull Request? Opening a PR and reviewing code.
+* Merging PRs and resolving merge conflicts.
+
+
+#### **Day 4: Pull Requests (PRs)**
+* What is a **Fork**? When to use it?
+* Fork vs. Clone: what's the difference?
+* How to clone a repo using `git clone`
+* Keeping your fork in sync with the original repo.
+## Hands-on Activity – GitStartedWithUs
+
+* Participate in OpenLake’s interactive repo to practice basic GitHub collaboration.
+* Fork the repo, add your name, create a PR, and get it merged.
+* Repository link:
+
+    👉 https://github.com/amaydixit11/DevLabs-2025/tree/main/Git/Canvas
 
 ## Resources:
 
@@ -34,41 +72,3 @@ Welcome to GitStartedWithUs, a collaborative platform for creative individuals t
     
     📝 Crowdsourced tips that range from beginner to advanced.
 
-
-
-## Getting started
-
-To get started with coloring pixels and leaving your mark on the canvas, follow these simple steps:
-
-- **Explore the Canvas**: Visit the Pixels website and explore the interactive canvas filled with blank pixels waiting to be colored. Each pixel represents a tiny square on the canvas.
-- **Choose Your Color**: Select your preferred color from the color palette available. We offer a diverse range of colors to choose from, allowing you to create eye-catching and imaginative designs.
-- **Color a Pixel**: Click on an individual pixel to color it with your chosen color. Watch as your pixel contributes to the evolving masterpiece on the canvas.
-- **Submit Your Contribution**: Once you've colored your pixel, you can submit your contribution.
-
-## How to Contribute
-
-Contributing to the canvas is easy and enjoyable:
-
-- **Fork** the repository
-- **Clone** it and create a `new branch`
-- **Choose Your Pixel**: Select a pixel you'd like to color.
-- **Pick Your Color**: Go to the style.css, choose your preferred color from the palette and add it to your grid.
-    - Copy the part where colours are specified at the end.
-    - Add your colour and desired cell number.
-    - Make sure you are not changing the existing code. Just paste your code at the end of style.css file
-    - Save your changes
-    - Check if your changes are being applied or not.
-- **Commit changes**: Run the following commands
-  ```bash
-  git add style.css
-  git commit -m "<cell_number>_<name>"
-  ```
-  If everything works correctly you are ready to push.
-  ```bash
-  git push -u origin <branch_name>
-  ```
-  
-- **Creating PR**: 
-    - Go to contribute on your forked repo
-    - There you will find option to open a Pull Request (PR)
-    - Click it and wait for review
