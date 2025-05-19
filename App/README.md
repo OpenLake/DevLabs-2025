@@ -178,14 +178,21 @@ Refer to the respective README files in the Kotlin and Flutter project folders. 
 
 ## ❓ FAQ
 
-*Q: Do I need prior experience with React or Next.js?*  
-A: No, we'll start with the basics. Basic knowledge of HTML, CSS, and JavaScript is recommended.
+*Q: Do I need prior experience with Android or Flutter?*  
+A: No—everything starts from the basics.
 
 *Q: How much time commitment is expected?*  
 A: Plan for approximately 10-15 hours per week for best results.
 
 *Q: Can I use additional libraries not mentioned in the resources?*  
 A: Yes, but discuss with your mentor first to ensure it aligns with the project goals.
+
+*Q: Can I switch between Kotlin and Flutter mid-track?*
+
+A: We recommend sticking to one until the end, but you’re free to explore both later.
+
+
+
 
 *Q: Will we be working individually or in teams?*  
 A: Both! Some exercises will be individual, but the main project will involve team collaboration.
