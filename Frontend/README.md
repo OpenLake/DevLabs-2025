@@ -27,71 +27,90 @@ Next.js is a React framework that enables functionality such as server-side rend
 - *Testing:* Writing tests for your components and functionality
 - *Deployment:* Getting your application online
 
-## 📅 Weekly Schedule
+# 🧠 DevLabs Frontend Learning Timeline (3.5 Weeks)
 
-### Week 1: Git & GitHub Fundamentals
-- Introduction to version control concepts
-- Setting up Git and GitHub account
-- Basic Git commands (clone, add, commit, push, pull)
-- Branching strategies and workflows
-- Creating and reviewing pull requests
-- Resolving merge conflicts
-- Collaborative development practices
+Welcome to the DevLabs frontend learning track!  
+This timeline is designed for **complete beginners** to learn **HTML, CSS, JavaScript, and React**, and build the **Taskify** web application step-by-step.
 
-### Week 2: React.js Fundamentals
-- JavaScript/ES6+ review
-- React setup and tooling (Create React App)
-- JSX syntax and expressions
+---
+
+## ⏱️ Timeline Overview
+
+> 📅 Total Duration: 3.5 Weeks  
+> 🎯 Final Goal: Build a fully functional frontend for Taskify using React, integrated with the Taskify backend API.
+
+
+
+## 📍 Phase 1: Web Development Fundamentals (Week 1 to Mid Week 2)
+
+**Duration:** ~1.5 Weeks  
+**Objective:** Build a strong foundation in HTML, CSS, and JavaScript  
+
+
+### Topics Covered:
+- **HTML**
+  - Elements, structure, forms, inputs, semantics
+- **CSS**
+  - Flexbox, layout design, responsiveness, media queries
+- **JavaScript**
+  - Variables, functions, arrays, objects
+  - DOM manipulation
+  - Event listeners and form handling
+  - Local storage basics
+
+### Practice Projects:
+- Personal portfolio page
+- Interactive form validation
+- To-do list or notes app using plain JavaScript
+
+
+
+## 📍 Phase 2: React + Taskify Development (Mid Week 2 to Week 3.5)
+
+**Duration:** ~2 Weeks  
+**Objective:** Learn React while building Taskify step-by-step  
+**Frontend features will mirror backend API functionality.**
+
+### Concepts Introduced (as needed):
+- React setup (Vite or CRA)
+- JSX syntax
 - Components and props
-- State management with useState
-- Handling events
-- Conditional rendering
-- Lists and keys
-- Forms and controlled components
-- *Mini-Project:* Interactive component library
+- `useState` for managing form inputs and UI
+- `useEffect` for fetching data and persisting to localStorage or backend
+- API calls using `fetch` or Axios
+- Error handling and loading states
+- Component-based structure for:
+  - Task management (CRUD)
+  - Note management (CRUD)
+  - User authentication (JWT)
+- Optional: Routing with `react-router` if time permits
 
-### Week 3: Advanced React & API Integration
-- Component lifecycle with useEffect
-- Context API for state management
-- Custom hooks
-- Error boundaries
-- Fetching data from APIs
-- Handling loading and error states
-- Authentication flows
-- Performance optimization techniques
-- *Mini-Project:* Data dashboard with API integration
+### Taskify Features to Implement:
+- User login and registration
+- Create, read, update, delete tasks
+- Create, read, update, delete notes
+- Mark tasks as done
+- Task status and priority
+- Input validation
+- Persistent login using JWT token
+- Protected views/routes (optional)
 
-### Week 4: Next.js Fundamentals
-- Introduction to Next.js and its benefits
-- File-based routing system
-- Static and dynamic routes
-- Data fetching strategies (SSR, SSG, ISR)
-- API routes
-- Image optimization
-- CSS and styling in Next.js
-- Environment variables and configuration
-- *Mini-Project:* Blog with dynamic content
 
-### Week 5: Advanced Next.js & Integration
-- Authentication in Next.js
-- Middleware and API protection
-- State management with Next.js
-- Performance optimization
-- SEO considerations
-- Internationalization
-- Deployment strategies
-- Integration with the backend
-- *Mini-Project:* E-commerce product page
 
-### Week 6: Project Completion & Deployment
-- Integration with other tracks
-- Debugging and troubleshooting
-- Code review and refactoring
-- Documentation
-- Final testing
-- Deployment to production
-- Presentation preparation
-- Demo day
+## 📍 Final Deliverables
+
+- Fully functional Taskify frontend built in React
+- Clean component structure and state management
+- Integration with backend APIs for authentication, tasks, and notes
+- Polished UI with responsiveness
+- Deployment-ready frontend (GitHub Pages, Vercel, or Netlify)
+
+
+## 🚀 Tips for Success
+
+- Learn by building: every new concept will be taught directly through a Taskify feature.
+- Ask questions — mentors are here to help!
+- Don’t chase perfection on the first try. Build first, polish later.
 
 ## 🚀 Project Components
 
@@ -162,15 +181,7 @@ For the Taskify project, each track will be responsible for the following compon
 - [Styled Components](https://styled-components.com/)
 - [CSS Modules](https://github.com/css-modules/css-modules)
 
-## 👥 Mentors
 
-- *[Mentor Name]*
-  - GitHub: [@username](https://github.com/username)
-  - Expertise: React, Next.js, State Management
-
-- *[Mentor Name]*
-  - GitHub: [@username](https://github.com/username)
-  - Expertise: UI/UX, Performance Optimization
 
 ## 🤝 Contribution Guidelines
 
