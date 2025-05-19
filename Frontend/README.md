@@ -37,7 +37,6 @@ Next.js is a React framework that enables functionality such as server-side rend
 
 **Duration:** ~1.5 Weeks  
 **Objective:** Build a strong foundation in HTML, CSS, and JavaScript  
-**No Taskify work yet.**
 
 ### Topics Covered:
 - **HTML**
