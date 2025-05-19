@@ -9,7 +9,6 @@
 ## 📚 Recommended General Resources
 - [React Official Docs](https://react.dev/)
 - [FreeCodeCamp Full React Course](https://www.youtube.com/watch?v=bMknfKXIFA8)
-- [The Net Ninja - React Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT)
 - [CSS Tricks – React](https://css-tricks.com/tag/react/)
 
 ---
@@ -120,7 +119,7 @@
   - [CSS Modules Guide](https://github.com/css-modules/css-modules)
 
 - **Component-level Styling Best Practices**  
-  - [Blog – Styling React Components](https://blog.logrocket.com/the-best-styling-in-react-tutorial-youve-ever-seen/)
+  - [Blog – Styling React Components](https://www.geeksforgeeks.org/8-ways-to-style-react-components/)
 
 - **Conditional Styling**  
   - [React Docs – Conditional Class Names](https://react.dev/learn/conditional-rendering#rendering-different-content-based-on-a-condition)
