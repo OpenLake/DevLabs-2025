@@ -1,0 +1,199 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #eeeeee;
+    padding: 0 10vw;
+  }
+  
+  h1 {
+  
+    text-align: left;
+    font-size: 1vhvh;
+    color: white;
+    padding-left: 3vw;
+  }
+  
+  header {
+    background-color: #474747;
+    height: 10vh;
+    width: 100vw;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #252323;
+    color: white;
+    height: 10vh;
+    width: 100vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 2vh;
+  }
+  
+  #pixel-art-container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(
+      20,
+      1fr
+    ); /* 20 columns, each taking 1 fraction of the available space */
+    grid-template-rows: repeat(
+      20,
+      1fr
+    ); /* 20 rows, each taking 1 fraction of the available space */
+    gap: 1px;
+    width: 80vmin; /* Use vmin to ensure square grid */
+    height: 80vmin; /* Use vmin to ensure square grid */
+    border: 1px solid black; /* Optional: add border to the grid */
+    margin: 2vh;
+  }
+  
+  .cell {
+    width: calc(
+      (80vmin - 19px) / 20
+    ); /* Adjust cell width to fit perfectly, subtracting gap spaces */
+    height: calc(
+      (80vmin - 19px) / 20
+    ); /* Adjust cell height to fit perfectly, subtracting gap spaces */
+    background-color: white; /* Default background color */
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Ensure link color matches surrounding text ---- (optional) */
+  }
+  
+  /* Customize colors for individual cells */
+  #pixel-art-container .cell:nth-child(1) {
+    background-color: red;
+  }
+  
+  #pixel-art-container .cell:nth-child(2) {
+    background-color: blue;
+  }
+  
+  #pixel-art-container .cell:nth-child(3) {
+    background-color: green;
+  }
+  
+  #pixel-art-container .cell:nth-child(4) {
+    background-color: yellow;
+  }
+  
+  #pixel-art-container .cell:nth-child(4) {
+    background-color: red;
+  }
+  
+  #pixel-art-container .cell:nth-child(7) {
+    background-color: orange;
+  }
+  #pixel-art-container .cell:nth-child(5) {
+    background-color: purple;
+  }
+  #pixel-art-container .cell:nth-child(10) {
+    background-color: black;
+  }
+  #pixel-art-container .cell:nth-child(69) {
+    background-color: orange;
+  }
+  #pixel-art-container .cell:nth-child(191) {
+    background-image: radial-gradient(rgb(206, 255, 253), rgb(91, 255, 255));
+  }
+  #pixel-art-container .cell:nth-child(20) {
+    background-color: Aqua;
+  }
+  #pixel-art-container .cell:nth-child(19) {
+    background-color: DodgerBlue;
+  }
+  
+  #pixel-art-container .cell:nth-child(123) {
+      background-color:#aa6f73;
+  }
+  
+  #pixel-art-container .cell:nth-child(399) {
+    background-color: beige;
+  }
+  
+  #pixel-art-container .cell:nth-child(317) {
+    background: linear-gradient(to top right, #4568dc, #b06ab3);
+  }
+  
+  #pixel-art-container .cell:nth-child(381){
+      background-color: rgb(93, 25, 25);
+  }
+  
+  
+  #pixel-art-container .cell:nth-child(65) {
+      background-color: orange;
+  }
+  #pixel-art-container .cell:nth-child(65) {
+      background-color: orange;
+  }
+  #pixel-art-container .cell:nth-child(18) {
+    background-color: gold;
+  }
+  #pixel-art-container .cell:nth-child(67) {
+      background-color: pink;
+  }
+    #pixel-art-container .cell:nth-child(317) {
+      background: linear-gradient(to top right, #4568dc, #b06ab3);
+    }
+    
+    #pixel-art-container .cell:nth-child(381){
+        background-color: rgb(87, 24, 24);
+    }
+    
+    
+    #pixel-art-container .cell:nth-child(65) {
+        background-color: orange;
+    }
+    #pixel-art-container .cell:nth-child(65) {
+        background-color: orange;
+    }
+    #pixel-art-container .cell:nth-child(18) {
+        background-color: gold;
+    }
+    #pixel-art-container .cell:nth-child(271) {
+  
+      background-color: gold;
+    }
+    
+    #pixel-art-container .cell:nth-child(9) {
+      background-color: rgb(17, 255, 0);
+    }
+    #pixel-art-container .cell:nth-child(91) {
+        background-color: burlywood;
+    }
+    #pixel-art-container .cell:nth-child(101) {
+        background-color: yellowgreen;
+    }
+    #pixel-art-container .cell:nth-child(100) {
+        background-color: yellowgreen;
+    }
+    #pixel-art-container .cell:nth-child(104) {
+        background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+    }
+    #pixel-art-container .cell:nth-child(389) {
+      background-color: rgb(53, 243, 23);
+    }
+    #pixel-art-container .cell:nth-child(361) {
+      background-color: coral;
+  }
+  #pixel-art-container .cell:nth-child(200) {
+    background-color: cyan;
+  
+  }
+  
+  #pixel-art-container .cell:nth-child(181) {
+    background-color: rgb(83, 0, 134);
+  }
+  #pixel-art-container .cell:nth-child(21) {
+    background-color: red;
+  }
+  
+  /* test */
+  /* Add more colors for other cells as needed */
+  /* add */
