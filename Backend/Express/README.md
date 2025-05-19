@@ -1,159 +1,167 @@
-## 🌱 Node.js & Express.js Learning Track for Taskify
+# 🟢 Node.js & Express.js Development Track
 
-A step-by-step guide to get started with backend development using **Node.js** and **Express.js**.
+## 🛠 Tech Stack
 
----
-
-### ✅ Step 1: Understand Node.js Basics
-
-#### 📚 Topics:
-
-* What is Node.js?
-* Installing Node.js & npm
-* Running JavaScript with Node
-* `console.log`, `require`, `module.exports`
-* Understanding `package.json`
-
-#### 🛠️ Practice:
-
-* Create and run a `hello.js` file with `console.log("Hello Node")`
-* Initialize a project with `npm init -y`
-
-#### 🔗 Resources:
-
-* [Node.js Official Docs](https://nodejs.org/en/docs)
-* [Node.js Crash Course (YouTube)](https://www.youtube.com/watch?v=fBNz5xF-Kx4)
+* **Node.js**
+* **Express.js**
+* **MongoDB (for backend database)**
+* **Postman / Thunder Client (for API testing)**
 
 ---
 
-### ✅ Step 2: Introduction to Express.js
+## 📚 Recommended Guides
 
-#### 📚 Topics:
+* [Node.js Docs](https://nodejs.org/en/docs)
+* [Express.js Docs](https://expressjs.com/)
+* [The Net Ninja - Node.js Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jx2TTZk3IGWKSbtugYdrlu)
+* [Node.js Crash Course – Traversy Media](https://www.youtube.com/watch?v=fBNz5xF-Kx4)
+* [REST API Crash Course – Traversy Media](https://www.youtube.com/watch?v=Q-BpqyOT3a8)
 
-* What is Express.js?
-* Installing Express
-* Creating a basic Express server
-* Handling routes (`GET`, `POST`)
-* Sending JSON response
+---
 
-#### 🛠️ Practice:
+## ✅ Complete Roadmap
 
-* Create an Express server
-* Add `/`, `/about`, and `/contact` routes
+---
 
-#### 🔗 Resources:
+### 1. 🧠 Introduction to Git and GitHub
+
+* OpenLake: **GitStartedWithUs**
+* YouTube: *Git and GitHub Crash Course*
+* Learn version control to manage your projects efficiently.
+
+---
+
+### 2. 🛠 Environment Setup
+
+**Steps:**
+
+* Install Node.js and npm
+* Install VS Code and setup extensions (e.g., Prettier, ESLint)
+* Initialize a project using `npm init`
+* Use `.gitignore` and environment variables with `dotenv`
+
+**Resources:**
+
+* [Node.js Installation Guide](https://nodejs.org/en/download/)
+* [NPM Docs](https://docs.npmjs.com/)
+
+---
+
+### 3. 📦 Node.js Fundamentals
+
+**Topics:**
+
+* `require` and `module.exports`
+* File system module (`fs`)
+* `http` module to create server
+* Event loop and asynchronous JavaScript (callbacks, promises, async/await)
+* Working with `path`, `os`, `events` modules
+
+**Resources:**
+
+* [Node.js Crash Course – Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jx2TTZk3IGWKSbtugYdrlu)
+* [Node.js Docs](https://nodejs.org/dist/latest-v18.x/docs/api/)
+
+---
+
+### 4. 🚀 Express.js Basics
+
+**Topics:**
+
+* Installing and setting up Express
+* Routing: GET, POST, PUT, DELETE
+* Middleware (built-in and custom)
+* Static files serving
+* Handling JSON and URL-encoded data
+
+**Resources:**
 
 * [Express.js Docs](https://expressjs.com/)
-* [Express Crash Course – Traversy Media](https://www.youtube.com/watch?v=L72fhGm1tfE)
+* [YouTube: Express.js Crash Course](https://www.youtube.com/watch?v=L72fhGm1tfE)
 
 ---
 
-### ✅ Step 3: Creating a Simple REST API
+### 5. 🔁 REST API Development
 
-#### 📚 Topics:
+**Topics:**
 
-* REST API basics (GET, POST, PUT, DELETE)
-* Using `req.body`, `req.params`, `req.query`
-* Basic CRUD operations using arrays
+* RESTful principles (CRUD operations)
+* API design: endpoints, status codes, request/response structure
+* Route files and controller pattern
+* Basic project: Task Manager / Notes App API
 
-#### 🛠️ Practice:
+**Tools:**
 
-* Create a "Books" API with routes:
-
-  * `GET /books`
-  * `GET /books/:id`
-  * `POST /books`
-  * `PUT /books/:id`
-  * `DELETE /books/:id`
-
-#### 🔗 Tools:
-
-* [Thunder Client (VS Code Extension)](https://www.thunderclient.com/)
 * [Postman](https://www.postman.com/)
+* [Thunder Client (VS Code)](https://www.thunderclient.com/)
 
-#### 🔗 Resources:
+**Resources:**
 
-* [Express.js routing guide](https://expressjs.com/en/guide/routing.html)
-
----
-
-### ✅ Step 4: Middleware & Static Files
-
-#### 📚 Topics:
-
-* What is middleware?
-* Using built-in middleware (`express.json()`, `express.static`)
-* Creating custom middleware
-
-#### 🛠️ Practice:
-
-* Create a custom middleware to log time and URL
-* Serve static HTML files from a `public` folder
+* [REST API Crash Course – Traversy](https://www.youtube.com/watch?v=Q-BpqyOT3a8)
+* [REST API Guide (MDN)](https://developer.mozilla.org/en-US/docs/Glossary/REST)
 
 ---
 
-### ✅ Step 5: Build an Authentication Service (Login & Signup)
+### 6. 🔐 Authentication & Authorization
 
-#### 📚 Topics:
+**Topics:**
 
-* What is authentication & authorization
-* Password hashing using `bcrypt`
-* JSON Web Tokens (JWT)
-* Protecting private routes
-* Token-based user sessions
+* Register/Login routes
+* Hashing passwords with `bcrypt`
+* Token-based authentication using JWT
+* Role-based access control
+* Protecting private routes with middleware
 
-#### 🛠️ Practice:
-
-* Create `POST /register` and `POST /login` routes
-* Store user data (can use in-memory or simple JSON file)
-* Use `bcrypt` to hash passwords before storing
-* Use `jsonwebtoken` to generate a token during login
-* Create a middleware to verify the token and protect routes like `GET /profile`
-
-#### 📦 Libraries:
+**Libraries:**
 
 ```bash
-npm install bcrypt jsonwebtoken
+npm install bcrypt jsonwebtoken dotenv
 ```
 
-#### 🔐 Folder Structure Suggestion:
+**Resources:**
 
-```
-auth-app/
-├── controllers/
-│   └── authController.js
-├── routes/
-│   └── authRoutes.js
-├── middleware/
-│   └── authMiddleware.js
-├── app.js
-└── users.json  (or in-memory array for storing user data)
-```
-
-#### 🔗 Resources:
-
-* [JWT Crash Course – Traversy Media](https://www.youtube.com/watch?v=mbsmsi7l3r4)
-* [bcrypt Documentation](https://www.npmjs.com/package/bcrypt)
-* [jsonwebtoken Docs](https://github.com/auth0/node-jsonwebtoken)
+* [JWT Auth Crash Course](https://www.youtube.com/watch?v=mbsmsi7l3r4)
+* [bcrypt Docs](https://www.npmjs.com/package/bcrypt)
+* [jsonwebtoken Docs](https://www.npmjs.com/package/jsonwebtoken)
 
 ---
 
-### ✅ Step 6: Simple Project (Capstone)
+### 7. 🌐 MongoDB Integration
 
-#### 💡 Project Idea:
+**Topics:**
 
-**Task Manager API**
-Features:
+* NoSQL concepts and collections
+* Connecting Node.js with MongoDB using Mongoose
+* Creating schemas and models
+* CRUD operations with MongoDB
 
-* Add a task
-* View all tasks
-* Update a task
-* Delete a task
+**Libraries:**
+
+```bash
+npm install mongoose
+```
+
+**Resources:**
+
+* [MongoDB Crash Course – Traversy](https://www.youtube.com/watch?v=-56x56UppqQ)
+* [Mongoose Docs](https://mongoosejs.com/docs/guide.html)
 
 ---
 
-### 🧑‍🎓 After Completing This Track, You Will:
+### 8. 🧪 Validation & Error Handling
 
-* Understand how Node.js and Express.js work
-* Be able to build and test basic APIs
-* Be ready to move to MongoDB integration and authentication
+**Topics:**
+
+* Validating input with `express-validator` or `Joi`
+* Global error handling middleware
+* Handling async errors with `try-catch` or packages like `express-async-errors`
+
+**Resources:**
+
+* [express-validator](https://express-validator.github.io/docs/)
+* [Joi Validation](https://joi.dev/)
+
+---
+
+> 💡 *Build step-by-step, practice every concept with projects. Happy Backend Development! 🧠*
+
