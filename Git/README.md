@@ -1,74 +1,148 @@
+# DevLabs 2025: Git & GitHub Onboarding Guide
 
-# **Git & GitHub: Week-1**
+Welcome to **DevLabs 2025** by **OpenLake**! This document will help you get started with Git and GitHub, and walk you through an introductory week of structured learning and activities.
 
-#### **Day 1: Introduction to Git & GitHub**
+---
 
-* What is **Git**? Why use version control?
-* What is **GitHub**?
-* Installing Git and setting up your GitHub account.
-* Basic Git configuration (`git config`).
-* Initialize a repo: `git init`
-* Add and commit changes: `git add`, `git commit`
-* View history: `git log`
+## Week 1: Introduction to Git & GitHub
 
-#### **Day 2: Core Git Operations**
-* Understand the staging area and commit history.
-* Visualize the Git workflow (Working Directory → Staging Area → Repository).
-* Connecting to GitHub using HTTPS/SSH.
-* `git remote add`, `git push`, `git pull`
-* Creating a repo on GitHub and linking it locally.
-* Syncing changes between local and remote.
+### Day 1: Basics
 
-#### **Day 3: Pushing and Pulling**
-* What are **Issues** in GitHub?
-* Creating, assigning, and commenting on issues.
-* Labels, milestones, and project boards.
-* Using issues to manage tasks in a collaborative repo.
-* What is a Pull Request? Opening a PR and reviewing code.
-* Merging PRs and resolving merge conflicts.
+| Topic                    | Description                                                                           |
+| ------------------------ | ------------------------------------------------------------------------------------- |
+| What is Git?             | Git is a distributed version control system for tracking changes in source code.      |
+| Why use version control? | To collaborate efficiently, maintain history, manage features, and prevent conflicts. |
+| What is GitHub?          | A cloud-based platform for hosting and collaborating on Git repositories.             |
+| Install Git              | Download from [git-scm.com](https://git-scm.com) or use your package manager.         |
+| GitHub Account           | Create an account at [github.com](https://github.com).                                |
 
+#### Basic Git Setup
 
-#### **Day 4: Pull Requests (PRs)**
-* What is a **Fork**? When to use it?
-* Fork vs. Clone: what's the difference?
-* How to clone a repo using `git clone`
-* Keeping your fork in sync with the original repo.
-## Hands-on Activity – GitStartedWithUs
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+```
 
-* Participate in OpenLake’s interactive repo to practice basic GitHub collaboration.
-* Fork the repo, add your name, create a PR, and get it merged.
-* Repository link:
+#### Initialize a Git Repository
 
-    👉 https://github.com/amaydixit11/DevLabs-2025/tree/main/Git/Canvas
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git log
+```
 
-## Resources:
+---
 
-1. An Intro to Git and GitHub for Beginners 
-    
-    🔗 https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+### Day 2: Core Git Operations
 
-2. Git Commands Cheat Sheet
+| Topic                | Command/Concept                               |
+| -------------------- | --------------------------------------------- |
+| Staging Area         | `git add`                                     |
+| Commit History       | `git log`                                     |
+| Git Workflow         | Working Directory → Staging Area → Repository |
+| Connecting to GitHub | HTTPS or SSH                                  |
+| Remote Repository    | `git remote add origin <url>`                 |
+| Push Code            | `git push origin main`                        |
+| Pull Changes         | `git pull origin main`                        |
+| Link to GitHub       | Create repo on GitHub, then push from local   |
 
-    📄 A concise README-style Git cheat sheet repository
+---
 
-    🔗 https://github.com/joshnh/Git-Commands
-    
-    📝 Lists common Git commands with brief explanations. Great for quick reference.
+### Day 3: GitHub Issues & Collaboration
 
- 
+| Concept        | Description                                |
+| -------------- | ------------------------------------------ |
+| Issues         | Track bugs, features, or tasks             |
+| Labels         | Categorize issues (bug, enhancement, etc.) |
+| Milestones     | Group issues under a goal or release       |
+| Project Boards | Kanban-style tracking for tasks            |
+| Assign Issues  | Assign teammates to tasks                  |
 
-3. GitFlight-Rules
-    📄 A repository of "what to do when" scenarios for Git
-    
-    🔗 https://github.com/k88hudson/git-flight-rules
-    
-    📝 Use this like an emergency manual for tricky Git situations. The README and structure are excellent for real-world use.
+#### Pull Requests
 
-4. Git-Tips
-    
-    📄 Useful Git tips and tricks in a README
-    
-    🔗 https://github.com/git-tips/tips
-    
-    📝 Crowdsourced tips that range from beginner to advanced.
+* Fork a repository or work on a branch
+* Open a Pull Request (PR)
+* Request reviews and discuss changes
+* Merge after approval or resolve merge conflicts if needed
 
+---
+
+### Day 4: Forks, Clones & Open Collaboration
+
+| Term       | Fork                                       | Clone                        |
+| ---------- | ------------------------------------------ | ---------------------------- |
+| What it is | A copy of a repo under your GitHub account | A local copy on your machine |
+| Use Case   | Contribute without access to the original  | Edit and test code locally   |
+
+```bash
+git clone git@github.com:your_username/repo-name.git
+```
+
+#### Keeping Fork in Sync
+
+```bash
+git remote add upstream https://github.com/original_owner/repo.git
+git fetch upstream
+git merge upstream/main
+```
+
+---
+
+## Hands-on Activity: GitStartedWithUs
+
+Practice GitHub collaboration using IIT Bhilai’s interactive repository.
+
+**Activity Repo:** [DevLabs-2025 Canvas](https://github.com/amaydixit11/DevLabs-2025/tree/main/Git/Canvas)
+
+### Steps:
+
+1. **Fork** the repository to your GitHub account
+2. **Clone** it locally:
+
+   ```bash
+   git clone git@github.com:your_username/DevLabs-2025.git
+   ```
+3. **Make Changes**: Add your name to the appropriate file
+4. **Commit and Push**:
+
+   ```bash
+   git add .
+   git commit -m "Add my name to canvas"
+   git push origin main
+   ```
+5. **Create Pull Request** and get it merged
+
+---
+
+## GitHub & Git Setup Summary
+
+### 1. Generate SSH Key
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+### 2. Add SSH Key to GitHub
+
+```bash
+clip < ~/.ssh/id_ed25519.pub  # For Windows
+cat ~/.ssh/id_ed25519.pub     # For macOS/Linux
+```
+
+* Go to GitHub > Settings > SSH and GPG keys > New SSH Key > Paste and save
+
+---
+
+## Resources for Reference
+
+| Resource                                                                                             | Description                            |
+| ---------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| [Git & GitHub for Beginners](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners) | Introductory blog by HubSpot           |
+| [Git Commands Cheat Sheet](https://github.com/joshnh/Git-Commands)                                   | Common Git commands with explanations  |
+| [Git Flight Rules](https://github.com/k88hudson/git-flight-rules)                                    | What to do when things go wrong in Git |
+| [Git Tips](https://github.com/git-tips/tips)                                                         | Community-sourced Git tips             |
+
+---
+
+You're now all set to begin your journey with Git, GitHub, and DevLabs 2025. Happy coding!
