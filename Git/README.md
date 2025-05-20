@@ -93,7 +93,7 @@ git merge upstream/main
 
 Practice GitHub collaboration using IIT Bhilai’s interactive repository.
 
-**Activity Repo:** [DevLabs-2025 Canvas](https://github.com/amaydixit11/DevLabs-2025/tree/main/Git/Canvas)
+**Activity Repo:** [DevLabs-2025 Canvas](https://github.com/OpenLake/GitStartedWithUs)
 
 ### Steps:
 
