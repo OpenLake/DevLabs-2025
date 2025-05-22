@@ -138,6 +138,7 @@ cat ~/.ssh/id_ed25519.pub     # For macOS/Linux
 
 | Resource                                                                                             | Description                            |
 | ---------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| https://www.youtube.com/watch?v=AdzKzlp66sQ | Installation and Setup of Git in Windows |
 | [Git & GitHub for Beginners](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners) | Introductory blog by HubSpot           |
 | [Git Commands Cheat Sheet](https://github.com/joshnh/Git-Commands)                                   | Common Git commands with explanations  |
 | [Git Flight Rules](https://github.com/k88hudson/git-flight-rules)                                    | What to do when things go wrong in Git |
