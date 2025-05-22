@@ -1,223 +1,123 @@
-# DevLabs 2025: OpenLake Summer Edition ☀
+# DevLabs 2025: OpenLake Summer Edition ☀️
 
-Welcome to DevLabs: OpenLake Summer Edition – a comprehensive, beginner-friendly summer development program organized by OpenLake, IIT Bhilai. This initiative is designed to help students kickstart their development journey by learning through building real-world, useful projects that solve actual problems within the IIT Bhilai community.
-
-## 🚀 Program Overview
-
-DevLabs 2025 is a *6-week intensive program* where participants will:
-- Learn industry-standard development practices
-- Work with modern technology stacks
-- Build a fully functional marketplace platform for IIT Bhilai
-- Receive mentorship from experienced developers
-- Contribute to open-source projects
+Welcome to DevLabs: OpenLake Summer Edition – a comprehensive, beginner-friendly 6-week development program organized by OpenLake, IIT Bhilai. Transform from a beginner to a confident developer by building **Taskify**, a real-world productivity platform.
 
 ---
 
-## 🧩 Program Structure
+## 📚 Learning Tracks
 
-The program follows a structured, project-based learning approach with a focus on beginner accessibility. Participants will select one of three technology tracks and build components of an end-to-end application under the guidance of experienced mentors.
+Choose your adventure and follow the structured weekly roadmap:
 
-### 📅 Weekly Schedule
+### 🖥️ Frontend Development
+**Build responsive web interfaces with modern React**
+- **Technologies:** HTML/CSS, JavaScript, React.js, Next.js
+- **Duration:** 3.5 weeks intensive learning + project work
+- **[📖 Track Details →](Frontend/README.md)**
 
-| Week | Focus | Activities |
-|------|-------|------------|
-| *Week 1* | Git & GitHub Fundamentals | Version control basics, collaborative workflows, pull requests, code reviews |
-| *Week 2-3* | Track-Specific Fundamentals | Core concepts of chosen track, guided exercises, initial feature implementation |
-| *Week 4-5* | Advanced Track Concepts | Complex implementations, integration with other components, testing |
-| *Week 6* | Project Completion & Deployment | Final integration, bug fixes, documentation, deployment, presentation |
+| Week | Focus |
+|------|-------|
+| [Week 1](Frontend/React/week-1/README.md) | HTML, CSS & JavaScript Fundamentals |
+| [Week 2](Frontend/React/week-2/README.md) | JavaScript Mastery & React Introduction |
+| [Week 3](Frontend/React/week-3/README.md) | React Fundamentals & Taskify Frontend |
+| [Week 3.5](Frontend/React/week-3.5/README.md) | Optimization & Deployment |
 
-### 💡 Key Highlights
+### 📱 Mobile Development  
+**Create cross-platform mobile apps**
+- **Technologies:** Flutter (Dart), Kotlin (Android)
+- **Duration:** 3.5 weeks intensive learning + project work
+- **[📖 Track Details →](App/README.md)**
 
-- Inclusive Participation: Open to all students regardless of prior development experience
-- Hands-on Project Development: Learn by building actual features and solving real problems
-- Practical Skills Acquisition: Gain experience with industry-standard tools and workflows
-- Git and Open-Source Fundamentals: Master version control and collaborative development
-- Impact-Focused Projects: Build applications useful to students
-- Mentorship: Regular guidance from experienced developers
-- Community Support: Learn alongside peers and build your network
+| Week | Focus |
+|------|-------|
+| Week 1-1.5 | Mobile UI Fundamentals & Navigation |
+| Week 2-3.5 | Taskify Mobile App Development |
 
-### 📊 Learning Methodology
+**Choose Your Stack:**
+- **[Flutter Track →](App/flutter/README.md)** - Cross-platform development
+- **[Kotlin Track →](App/kotlin/README.md)** - Native Android development
 
-1. Foundation Building: Begin with core concepts of your chosen technology
-2. Guided Implementation: Apply concepts through structured coding exercises
-3. Project Integration: Contribute features to the main project
-4. Code Reviews: Receive feedback from mentors to improve your code
-5. Documentation: Learn how to document your work professionally
-6. Deployment: Experience the full lifecycle of shipping a product
+### ⚙️ Backend Development
+**Build robust APIs and server architecture**
+- **Technologies:** Node.js, Express/NestJS, FastAPI, PostgreSQL
+- **Duration:** 6 weeks comprehensive backend mastery
+- **[📖 Track Details →](Backend/README.md)**
 
----
-
-## 🌱 Development Tracks
-
-Participants can choose from the following tracks based on their interests:
-
-### 🖥 Frontend Track
-
-Build engaging user interfaces and interactive experiences using modern web technologies. Master component-based architecture, state management, and responsive design principles.
-
-*Technologies:* React.js, Next.js
-
-*What you'll learn:*
-- Component-based UI development
-- State management and data flow
-- Routing and navigation
-- API integration
-- Responsive design principles
-
-[*Detailed Frontend Track Information →*](Frontend/README.md)
-
-### 📱 App Development Track
-
-Create cross-platform mobile applications with beautiful interfaces and seamless user experiences. Learn how to build, test, and deploy mobile apps that work on multiple devices.
-
-*Technologies:* Flutter, Kotlin (Android)
-
-*What you'll learn:*
-- Mobile UI/UX fundamentals
-- State management for mobile apps
-- Navigation patterns
-- API integration and offline storage
-- Platform-specific optimizations
-
-[*Detailed App Development Track Information →*](App/README.md)
-
-### ⚙ Backend Track
-
-Develop robust server-side applications, APIs, and database systems. Learn how to handle authentication, data persistence, and business logic to power web and mobile applications.
-
-*Technologies:* Node.js with Express/NestJS, PostgreSQL
-
-*What you'll learn:*
-- RESTful API development
-- Authentication and authorization
-- Database design and operations
-- Server-side architecture
-- API testing and documentation
-
-[*Detailed Backend Track Information →*](Backend/README.md)
-
----
-## 🎯 Final Project: Taskify - Personalized Management System
-
-Taskify is a beginner-friendly task management system designed to help students organize their task and store important notes. This application focuses on simplicity and usability, making it an ideal starting point for developers new to software development.
-
-### 🧰 Key Features
-
-#### Task Management
-- **Create Tasks**: Add new tasks with title, description, due date, and priority level
-- **Update Tasks**: Modify task details as your plans change
-- **Delete Tasks**: Remove completed or unnecessary tasks
-- **Task Status**: Track progress with status options (To Do, Completed)
-- **Priority Levels**: Set importance with visual indicators (High, Medium, Low)
-
-#### Notes System
-- **Create Notes**: Quickly jot down ideas, lecture notes, or reminders
-- **Search Functionality**: Easily find specific notes when needed
-
-#### User Experience
-- **Responsive Design**: Works seamlessly across desktop and mobile devices
-- **User Authentication**: Secure login system for personal data protection
-- **Dark/Light Mode**: Comfortable viewing options for different environments
-
-### 💡 Learning Opportunities
-
-This project offers an excellent opportunity for beginners to:
-
-- Implement CRUD operations (Create, Read, Update, Delete)
-- Work with user authentication and session management
-- Design and develop intuitive user interfaces
-- Create responsive layouts for multiple devices
-- Implement data persistence and storage solutions
-- Practice state management techniques
-- Deploy a complete application
-
-### 🔄 Integration Between Tracks
-
-- **Frontend**: Build an intuitive UI with task/note creation forms, lists, and dashboard components
-- **Backend**: Develop APIs for task/note management, user authentication, and data persistence
-- **Mobile**: Create a responsive mobile experience with offline capabilities
-
-### 🚀 Stretch Goals
-
-For teams or individuals who complete the core features early:
-
-- **Calendar Integration**: View tasks in calendar format
-- **Task Analytics**: Visual representations of completed vs. pending tasks
-- **Collaboration**: Share tasks or notes with other users
-- **Tags & Filters**: Advanced organization with custom tags
-- **Template System**: Create templates for recurring tasks
-- **Rich Text Formatting**: Basic formatting options for better organization
-- **Share Options**: Export notes to common formats (PDF, TXT)
-- **Notifications**: Optional reminders for approaching deadlines
-
-
-This project is specifically designed to be achievable for beginners while still providing valuable learning experiences and resulting in a useful application that students at IIT Bhilai can actually use in their daily lives.
-
-[*View Project Specifications →*](Project/README.md)
+**Choose Your Framework:**
+- **[Express.js Track →](Backend/Express/README.md)** - Flexible Node.js framework
+- **[FastAPI Track →](Backend/FastAPI/README.md)** - Modern Python API framework
 
 ---
 
-## 🤝 How to Participate
+## 🎯 The Project: Taskify
 
-1. *Apply:* Fill out the application form (link to be provided)
-2. *Selection:* Selected participants will be notified by email
-3. *Onboarding:* Complete the pre-program setup instructions
-4. *Track Selection:* Choose your development track
-5. *Get Started:* Join the kickoff session and begin your journey!
+Build a complete productivity management system that IIT Bhilai students will actually use.
 
----
+**[📋 Project Specifications →](Project/README.md)**
 
-## 👥 Mentorship & Support
+### Core Features
+- ✅ **Task Management** - Create, update, delete tasks with priorities
+- 📝 **Notes System** - Quick note-taking with search functionality  
+- 🔐 **User Authentication** - Secure login system
+- 📱 **Responsive Design** - Works on all devices
+- 🌙 **Dark/Light Mode** - Comfortable viewing experience
 
-Each track has dedicated mentors with expertise in the relevant technologies. As a participant, you'll have access to:
-
-- Weekly office hours
-- Code reviews with detailed feedback
-- Discord community for real-time help
-- Regular check-in meetings
-
----
-
-## 🏆 Recognition & Certificates
-
-Participants who successfully complete the program will receive:
-
-- Certificate of completion
-- Short listing for core member position based on contributions
-- Feature on the OpenLake website
-- Opportunity to continue as a core contributor
+### Learning Outcomes
+- Master CRUD operations and API integration
+- Implement user authentication and session management
+- Build responsive, accessible user interfaces
+- Deploy and maintain production applications
+- Collaborate using Git and GitHub workflows
 
 ---
 
-## 📞 Contact Information
+## 📅 Program Timeline
 
-For any queries, reach out through:
-
-- Email: openlake@iitbhilai.ac.in
+| Week | All Tracks | Frontend | Mobile | Backend |
+|------|------------|----------|---------|---------|
+| **Week 1** | [Git & GitHub Mastery](Git/README.md) | HTML/CSS/JS | Mobile UI Basics | Server Fundamentals |
+| **Week 2** | Project Planning | JavaScript + React Intro | App Development | API Development |
+| **Week 3** | Core Development | React + Routing | Taskify Mobile App | Database Integration |
+| **Week 4** | Advanced Features | State Management | API Integration | Authentication |
+| **Week 5** | Integration & Testing | API Integration | Polish & Testing | Advanced Features |
+| **Week 6** | Deployment & Polish | Deployment | Deployment | Production Deploy |
 
 ---
 
-## 📂 Repository Structure
+## 🏆 What You'll Gain
+
+- **Certificate of Completion** from IIT Bhilai OpenLake
+- **Portfolio Project** showcasing your skills
+- **Industry-Standard Practices** in software development
+- **Mentorship** from experienced developers
+- **Community** of like-minded developers
+- **Opportunity** to join OpenLake as a core contributor
+
+---
+
+## 📂 Repository Navigation
 
 ```
 DevLabs-2025/
-├── Frontend/                 # Frontend track materials
-│   ├── README.md             # Frontend track details
-│   ├── React/                # React.js resources and assignments
-│   └── Next/                 # Next.js resources and assignments
-├── App/                      # App development track materials
-│   ├── README.md             # App track details
-│   ├── Flutter/              # Flutter resources and assignments
-│   └── Kotlin/               # Kotlin resources and assignments
-├── Backend/                  # Backend track materials
-│   ├── README.md             # Backend track details
-│   └── Node/                 # Node.js resources and assignments
-├── Project/                  # Final project specifications
-│   └── README.md             # Project requirements and features
-└── Resources/                # Shared learning resources
-    └── Git/                  # Git and GitHub resources
-
+├── 📖 README.md              # This file - program overview
+├── 🖥️ Frontend/              # Web development track
+├── 📱 App/                   # Mobile development track  
+├── ⚙️ Backend/               # Server development track
+├── 🎯 Project/               # Taskify specifications
+├── ⚡ Git/                   # Version control guide
+└── 📚 Resources/             # Additional learning materials
 ```
+
 ---
 
-🚀 Happy Building! – Team OpenLake
+## 🚀 Ready to Begin?
+
+1. **Star this repository** ⭐
+2. **Complete the [Git setup](Git/README.md)**  
+3. **Choose your track** and follow the weekly guides
+4. **Join our community** and start building
+
+**Let's build something amazing together!** 🎉
+
+---
+
+*Made with ❤️ by Team OpenLake, IIT Bhilai*
