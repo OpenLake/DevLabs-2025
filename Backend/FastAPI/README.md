@@ -25,7 +25,7 @@
 
 ---
 
-## ✅ Complete Roadmap
+## ✅ Complete Roadmap 
 
 ---
 
@@ -37,7 +37,7 @@
 
 ---
 
-### 2. 🛠 Environment Setup
+### 2. Environment Setup
 
 **Steps:**
 
