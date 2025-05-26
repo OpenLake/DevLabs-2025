@@ -57,8 +57,7 @@
 
  
 ---
-Here’s a clear explanation of how to **install Git** and use it within **VS Code**, based on the two links you shared:
-
+ 
 ---
 
 # Step-by-Step Guide: Git Installation and Integration with VS Code
