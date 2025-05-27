@@ -101,12 +101,13 @@ You’ll practice:
 ---
 
 ### 🗂 Folder Structure
+[Repo Link: DevLabs-2025-Kotlin-1](https://github.com/Saurav1375/DevLabs-2025-Kotlin-1)
 
 Each mentee will write their code in their own `.kt` file.
 ```
-EverydayTools/
+DevLabs-2025-Kotlin-1/Week-1/src/main/java/org/openlake/week1/
 │
-├── Main.kt                    # Menu-driven CLI app
+├── main.kt                    # Menu-driven CLI app
 ├── UnitConverter.kt          # Module 1
 ├── Calculator.kt             # Module 2
 ├── BMICalculator.kt          # Module 3
@@ -120,7 +121,7 @@ Each file will have a `fun run()` function, which gets called from the main menu
 
 ### 👤 Individual Assignments
 
-### 🔹 Mentee 1 – `UnitConverter.kt`
+### 🔹 Akshat Gupta – `UnitConverter.kt`
 - Ask user which conversion they want:
     - km ↔ miles
     - °C ↔ °F
@@ -128,14 +129,14 @@ Each file will have a `fun run()` function, which gets called from the main menu
 - Use `when` to handle types
 - Create separate functions for each conversion
 
-### 🔹 Mentee 2 – `Calculator.kt`
+### 🔹 Swarit dixit – `Calculator.kt`
 - Ask user to input two numbers
 - Ask for operation: +, –, ×, ÷
 - Use `when` or `if` to perform operation
 - Handle division by 0 safely
 - Allow repeating with a loop
 
-### 🔹 Mentee 3 – `BMICalculator.kt`
+### 🔹 Sourav Singh Yadav – `BMICalculator.kt`
 - Take weight (kg) and height (m)
 - Calculate BMI = weight / (height × height)
 - Use `when` to categorize:
@@ -144,7 +145,7 @@ Each file will have a `fun run()` function, which gets called from the main menu
     - 25–29.9: Overweight
     - 30+: Obese
 
-### 🔹 Mentee 4 – `ReportCard.kt`
+### 🔹 Shivangshu Sarma – `ReportCard.kt`
 - Take marks for 3 to 5 subjects
 - Calculate total and average
 - Use `when` or `if` to give grade:
@@ -155,7 +156,7 @@ Each file will have a `fun run()` function, which gets called from the main menu
 
 ## 🧑‍💻 Integration
 
-In `Main.kt`, we’ll create a menu like:
+In `main.kt`, we’ll create a menu like:
 
 ```kotlin
 fun main() {
