@@ -107,7 +107,7 @@ Each mentee will write their code in their own `.kt` file.
 ```
 DevLabs-2025-Kotlin-1/Week-1/src/main/java/org/openlake/week1/
 │
-├── main.kt                    # Menu-driven CLI app
+├── EverydayTool.kt                    # Menu-driven CLI app
 ├── UnitConverter.kt          # Module 1
 ├── Calculator.kt             # Module 2
 ├── BMICalculator.kt          # Module 3
