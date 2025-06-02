@@ -1,117 +1,101 @@
+# 🗓️ Week 2 Plan: Flutter Foundations + Auth Concepts
 
-# 🗓️ Week 2 Plan: Flutter Foundations + Auth UI
-**Theme:** Build a Task Management app (`taskify`) step by step  
+**Theme:** Learn core Flutter concepts and authentication fundamentals  
 **Platform:** Android Studio
 
 ---
 
-## ✅ Day 1: Setup & Hello Flutter
-**Goal:** Get everyone ready with tools and run the first app.
+## ✅ Day 1: Setup & Project Structure  
+**Goal:** Get development environment ready and understand project structure.
 
 ### 🔧 Topics:
-- Install Flutter SDK & Android Studio
-- Create new Flutter project: `taskify`
-- Understand project structure: `lib/`, `main.dart`
-- Basics of `MaterialApp`, `Scaffold`, `AppBar`, `body`
-
-### 🛠️ Build:
-- Basic home screen with: “Welcome to Taskify!”
+- Installing Flutter SDK & Android Studio
+- Setting up a new Flutter project
+- Understanding Flutter project structure: `lib/`, `main.dart`
+- Introduction to `MaterialApp`, `Scaffold`, `AppBar`, and `body`
 
 ### 📚 Resources:
-- [Install Flutter (Official)](https://docs.flutter.dev/get-started/install)
-- [Install Android Studio](https://developer.android.com/studio/install)
-- [Flutter Docs](https://docs.flutter.dev/)
-- [Free Code Camp](https://www.youtube.com/watch?v=P2IGQT3BZQo)
-- [The Net Ninja - YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)
-- [FlutterDev - YouTube](https://www.youtube.com/@flutterdev)
+- [Install Flutter (Official)](https://docs.flutter.dev/get-started/install)  
+- [Install Android Studio](https://developer.android.com/studio/install)  
+- [Flutter Docs](https://docs.flutter.dev/)  
+- [Free Code Camp](https://www.youtube.com/watch?v=P2IGQT3BZQo)  
+- [The Net Ninja - YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)  
+- [FlutterDev - YouTube](https://www.youtube.com/@flutterdev)  
 - [Intro to Flutter for Beginners](https://www.youtube.com/watch?v=SDk_GldOtK8)
+
 ---
 
-## ✅ Day 2: Widget Basics + Login UI
-**Goal:** Understand UI layout and build login screen.
+## ✅ Day 2: Core Widgets & Layout  
+**Goal:** Understand basic Flutter widgets and layout concepts.
 
 ### 🔧 Topics:
 - Stateless vs Stateful widgets
-- Layout widgets: `Column`, `Text`, `TextField`, `ElevatedButton`, `Padding`, `SizedBox`
-- Styling using `TextStyle`, `InputDecoration`
-
-### 🛠️ Build:
-- Login screen with:
-  - Email + password fields
-  - Login button
+- Core layout widgets: `Column`, `Row`, `Text`, `TextField`, `ElevatedButton`, `Padding`, `SizedBox`
+- Styling elements with `TextStyle`, `InputDecoration`
 
 ### 📚 Resources:
-- [Widgets Catalog (Flutter)](https://docs.flutter.dev/ui/widgets)
+- [Widgets Catalog (Flutter)](https://docs.flutter.dev/ui/widgets)  
 - [TextField & InputDecoration Guide](https://docs.flutter.dev/cookbook/forms/text-input)
+
 ---
 
-## ✅ Day 3: Forms + Reusable Widgets
-**Goal:** Learn form handling and create reusable components.
+## ✅ Day 3: Forms & Validation  
+**Goal:** Learn form handling and validation in Flutter.
 
 ### 🔧 Topics:
-- `Form`, `TextFormField`, `GlobalKey<FormState>`
-- Input validation (basic)
-- Create `TaskifyTextField` (reusable custom widget)
-
-### 🛠️ Build:
-- Improve login screen using `TaskifyTextField`
+- Using `Form`, `TextFormField`, and `GlobalKey<FormState>`
+- Writing basic validation logic
+- Understanding how to manage user input in forms
 
 ### 📚 Resources:
-- [Flutter Forms and Validation](https://docs.flutter.dev/cookbook/forms/validation)
+- [Flutter Forms and Validation](https://docs.flutter.dev/cookbook/forms/validation)  
 - [Custom Widgets in Flutter](https://docs.flutter.dev/development/ui/widgets-intro#composition-widgets)
+
 ---
 
-## ✅ Day 4: Navigation + Register Screen
-**Goal:** Learn navigation and build registration screen.
+## ✅ Day 4: Navigation Fundamentals  
+**Goal:** Learn to navigate between screens in a Flutter app.
 
 ### 🔧 Topics:
-- `Navigator.push()`, `pop()`, named routes
-- Link login ↔ register screen
-- Add name/email/password in register
-
-### 🛠️ Build:
-- Register screen
-- Navigation from login → register → back
+- Basics of `Navigator.push()`, `pop()`, and named routes
+- Managing route transitions and passing data between screens
 
 ### 📚 Resources:
 - [Flutter Navigation Basics](https://docs.flutter.dev/cookbook/navigation/navigation-basics)
 
 ---
 
-## ✅ Day 5: Theming + Styling
-**Goal:** Apply app-wide styling and polish UI.
+## ✅ Day 5: Theming and Global Styles  
+**Goal:** Learn how to apply app-wide theming and consistent design.
 
 ### 🔧 Topics:
-- `ThemeData` and custom themes
-- Set `primaryColor`, `fontFamily`
-- Optional: add dark mode toggle
-
-### 🛠️ Build:
-- Apply consistent styles to login/register screens
+- Introduction to `ThemeData` and custom themes
+- Setting `primaryColor`, `fontFamily`, text themes
+- (Optional) Using dark mode with `ThemeMode`
 
 ### 📚 Resources:
-- [ThemeData – Flutter Docs](https://api.flutter.dev/flutter/material/ThemeData-class.html)
+- [ThemeData – Flutter Docs](https://api.flutter.dev/flutter/material/ThemeData-class.html)  
 - [Custom Fonts in Flutter](https://docs.flutter.dev/cookbook/design/fonts)
 
 ---
 
-## ✅ Day 6: Homepage UI with Tabs
-**Goal:** Build the main screen layout with task categories.
+## ✅ Day 6: State Management Overview  
+**Goal:** Understand how Flutter handles state and data flow.
 
 ### 🔧 Topics:
-- `Scaffold`, `AppBar`, `BottomNavigationBar`, `TabBar`
-- Organize tabs: To Do / In Progress / Done
-- Create a basic `TaskCard` widget
-
-### 🛠️ Build:
-- Homepage with 3 tabs and placeholder cards
+- When to use Stateful vs Stateless
+- Lifting state up
+- Overview of simple state management techniques (e.g., `setState`, `Provider`, `Riverpod`)
 
 ### 📚 Resources:
-- [TabBar & TabController](https://api.flutter.dev/flutter/material/TabBar-class.html)
-- [ListView.builder Guide](https://api.flutter.dev/flutter/widgets/ListView/ListView.builder.html)
+- [Managing State in Flutter](https://docs.flutter.dev/data-and-backend/state-mgmt/intro)
 
 ---
 
-## ✅ Day 7 (Weekend): Practice + Mock Data + Review
-**Goal:** Review, practice, and experiment. Complete anyt task remaining
+## ✅ Day 7 (Weekend): Review + Practice  
+**Goal:** Reinforce learning by revisiting core concepts and practicing coding patterns.
 
+### 🧠 Suggested Activities:
+- Revisit official docs or video resources from earlier days
+- Read and understand sample projects
+- Experiment with concepts like form validation, navigation, or theming in isolation
