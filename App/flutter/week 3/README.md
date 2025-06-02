@@ -1,85 +1,76 @@
+# 🗓️ Week 3 Plan: Advanced Widgets + Frontend Concepts
 
-# 🗓️ Week 3 Plan: Advanced Widgets + Finishing Frontend
-**Theme:** Expand UI with Drawer, Modals, and Dynamic Forms  
+**Theme:** Expand knowledge with Drawer, Modals, and Dynamic Forms  
 **Platform:** Android Studio
 
 ---
 
-## ✅ Day 1: Drawer + Navigation
+## ✅ Day 1: Drawer + Navigation  
 **Goal:** Understand Drawer layout and app navigation
 
 ### 🔧 Topics:
 - `Drawer` widget with menu items
-- Highlighting active item
-- Implement logout (use `print()` for now)
-
-### 🛠️ Build:
-- Navigation screen with a working drawer
+- Highlighting active navigation item
+- Implementing basic logout logic (use `print()` for now)
 
 ### 📚 Resources:
 - [Drawer Widget – Flutter Docs](https://api.flutter.dev/flutter/material/Drawer-class.html)
 
 ---
 
-## ✅ Day 2: Dialogs & Modals - New Task
-**Goal:** Learn how to show modals and manage state inside them
+## ✅ Day 2: Dialogs & Modals  
+**Goal:** Learn how to display modals and manage local state inside them
 
 ### 🔧 Topics:
-- `showDialog()` and `showModalBottomSheet()`
-- `DropdownButton`, `TextField`, and dynamic form content
-- `setState()` for dialog-local state
-
-### 🛠️ Build:
-- New Task modal with dropdown & fields
+- `showDialog()` and `showModalBottomSheet()` usage
+- Working with `DropdownButton`, `TextField`, and conditional UI
+- Managing dialog state using `setState()`
 
 ### 📚 Resources:
 - [Dialogs – Flutter Docs](https://docs.flutter.dev/cookbook/design/dialogs)
+
 ---
 
-## ✅ Day 3: Notes UI
-**Goal:** Practice lists, search, and card UI
+## ✅ Day 3: Lists, Search & Cards  
+**Goal:** Practice using list-based layouts, search input, and card widgets
 
 ### 🔧 Topics:
-- `TextEditingController` for search
-- `Card`, `ListView`, `ListTile`
-- `IconButton` for delete
-
-### 🛠️ Build:
-- Notes screen with dummy data
+- `TextEditingController` for search functionality
+- Building lists using `ListView`, `Card`, `ListTile`
+- Using `IconButton` for interactivity like deletion
 
 ### 📚 Resources:
 - [ListView & Card UI](https://docs.flutter.dev/cookbook/lists/basic-list)
 
 ---
 
-## ✅ Day 9: Profile Page UI
-**Goal:** Build a structured profile layout
+## ✅ Day 4: Profile Page Concepts  
+**Goal:** Understand profile layout and form structure
 
 ### 🔧 Topics:
-- Load and display mock user data
-- Add "Edit Profile" and "Update Password" sections
-- Layout using `Column`, `CircleAvatar`, `TextFormField`
-
-### 🛠️ Build:
-- Profile screen 
+- Displaying mock user data
+- Creating structured sections like "Edit Profile", "Update Password"
+- Layout using `Column`, `CircleAvatar`, and `TextFormField`
 
 ---
 
-## ✅ Day 10: New Note Modal
-**Goal:** Reinforce dialogs and local state management
+## ✅ Day 5: Reusable Dialogs  
+**Goal:** Reinforce concepts around dialogs and local state handling
 
 ### 🔧 Topics:
-- `AlertDialog` with title/content fields
-- Update note list in local state
-- Make modal reusable
-
-### 🛠️ Build:
-- New Note modal 
+- Creating `AlertDialog` with input fields
+- Managing dialog inputs and updating local data state
+- Making dialog components reusable
 
 ### 📚 Resources:
 - [AlertDialog – Flutter Docs](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
 
 ---
 
-## 📅 Final Day: Recap + Cleanup + Showcase
-**Goal:** Complete whatever is remaining
+## 📅 Final Day: Recap + Cleanup + Showcase  
+**Goal:** Review and solidify all concepts covered so far.
+
+### 🧠 Suggested Activities:
+- Review advanced widget usage
+- Practice combining drawer, dialog, and navigation concepts
+- Refactor any repetitive patterns into reusable components
