@@ -32,7 +32,7 @@ Welcome to the second week of DevLabs 2025 - App Development Track! This week, w
 
 For the UI implementation of our Taskify app, we'll divide the work into 4 modules. Each mentee will be responsible for implementing one of the following UI components:
 
-### 🔹 Mentee 1 – `Authentication Screens`
+### 🔹 Open to All – `Authentication Screens`
 - Create a sign-in screen with:
     - Email and password input fields
     - Sign-in button
@@ -65,7 +65,7 @@ presentation/auth/
   <img src="/App/kotlin/Week-2/ui/register.jpg" alt="Register Screen" width="200" height="420"> <br/>
 </div>
 
-### 🔹 Mentee 2 – `Task feature`
+### 🔹 Swarit dixit – `Task feature`
 - Create the main task list screen with:
     - Task filtering tabs (To Do, In Progress, Done)
     - Task cards with priority indicators
@@ -100,7 +100,7 @@ presentation/tasks/
 </div>
 
 
-### 🔹 Mentee 3 – `Notes Feature & Navigation Drawer`
+### 🔹 Akshat Gupta – `Notes Feature & Navigation Drawer`
 - Create the notes list screen with:
     - List of notes
     - Add note button
@@ -135,7 +135,7 @@ presentation/components/
   <img src="/App/kotlin/Week-2/ui/NavigationDrawer.jpg" alt="Task Screen" width="200" height="420">
 </div>
 
-### 🔹 Mentee 4 – `Task/Note Dialog Components`
+### 🔹 Shivangshu Sarma – `Task/Note Dialog Components`
 - Create task/note detail screens with:
     - Editable title and content
     - Save/update functionality
