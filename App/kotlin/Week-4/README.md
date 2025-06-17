@@ -371,28 +371,350 @@ class ExampleRepository(private val ktorHttpClient: HttpClient) {
 }
 ```
 
-## Integration with ViewModels
+# Week 4: ViewModel Integration & State Management
 
-After implementing repositories, integrate them with your existing UI:
+Welcome to the second part of Week 4 - ViewModel Integration! After implementing your repositories, it's time to connect them to the presentation layer through ViewModels. This week, you'll learn how modern Android apps manage UI state, handle user interactions, and coordinate between different layers of the app.
+
+
+## ViewModel Architecture Explained
+
+### What is a ViewModel?
+A ViewModel is a class designed to store and manage UI-related data in a lifecycle-conscious way:
+- **Survives configuration changes** (screen rotation, theme changes)
+- **Separates UI logic from business logic**
+- **Provides data to UI through observable patterns**
+- **Handles user interactions and coordinates with repositories**
+
+### MVVM Pattern in Android
+```
+View (Composables) ↔ ViewModel ↔ Repository ↔ Data Source (API/Database)
+```
+
+### Key Concepts You'll Learn
+
+#### 1. LiveData
+- Observable data holder class
+- Lifecycle-aware (only updates active observers)
+- Automatic UI updates when data changes
+
+#### 2. MutableState (Compose)
+- Compose-specific state management
+- Triggers recomposition when state changes
+- More suitable for Jetpack Compose UIs
+
+#### 3. ViewModelScope
+- Coroutine scope tied to ViewModel lifecycle
+- Automatically cancels when ViewModel is destroyed
+- Perfect for network calls and background operations
+
+## Core ViewModel Structure (Pre-implemented)
+
+The base ViewModel structure is already provided with essential setup:
 
 ```kotlin
-class TaskViewModel(private val taskRepository: TaskRepository) : ViewModel() {
-    private val _tasks = mutableStateOf<List<Task>>(emptyList())
-    val tasks: State<List<Task>> = _tasks
+class TaskifyViewModel(
+    private val taskRepository: TaskRepository,
+    private val notesRepository: NotesRepository,
+    private val authRepository: AuthRepository,
+    private val sessionManager: SessionManager
+) : ViewModel() {
     
-    private val _isLoading = mutableStateOf(false)
-    val isLoading: State<Boolean> = _isLoading
+    // Core state variables (already implemented)
+    private val _tasks = MutableLiveData<List<Task>>(emptyList())
+    val tasks: LiveData<List<Task>> = _tasks
     
-    fun loadTasks() {
-        viewModelScope.launch {
-            _isLoading.value = true
-            try {
-                _tasks.value = taskRepository.getTasks()
-            } catch (e: Exception) {
-                // Handle error
-            } finally {
-                _isLoading.value = false
-            }
+    private val _notes = MutableLiveData<List<Note>>(emptyList())
+    val notes: LiveData<List<Note>> = _notes
+    
+    val login = mutableStateOf(false)
+    val register = mutableStateOf(false)
+    
+    // Utility functions (already implemented)
+    init {
+        loadTasks()
+        loadNotes()
+    }
+    
+    fun resetStates() { /* Implementation provided */ }
+    fun clearStates() { /* Implementation provided */ }
+}
+```
+
+## Learning Resources & Concepts
+
+### Essential Concepts to Master
+
+#### LiveData vs MutableState
+```kotlin
+// LiveData approach (traditional Android)
+private val _tasks = MutableLiveData<List<Task>>()
+val tasks: LiveData<List<Task>> = _tasks
+
+// MutableState approach (Jetpack Compose)
+val login = mutableStateOf(false)
+```
+
+#### Coroutines in ViewModels
+```kotlin
+fun loadData() {
+    viewModelScope.launch {
+        try {
+            // Suspend function call
+            val data = repository.getData()
+            _data.value = data
+        } catch (e: Exception) {
+            // Handle error
+        }
+    }
+}
+```
+## Implementation Tasks
+
+Each mentee will implement specific ViewModel functions following the established patterns:
+
+### 🔹 **Shivangshu Sharma** - Authentication ViewModel Functions
+
+**Learning Focus:**
+- User session management
+- Form validation in ViewModels
+- Boolean state management with MutableState
+- Authentication flow coordination
+
+**Functions to Implement:**
+
+#### 1. `login(email: String, password: String)`
+```kotlin
+fun login(email: String, password: String) {
+    viewModelScope.launch {
+        // TODO: Implement login logic
+        // 1. Call authRepository.login()
+        // 2. Handle success/failure
+        // 3. Save token using sessionManager
+        // 4. Update login state
+        // 5. Handle errors appropriately
+    }
+}
+```
+
+#### 2. `register(fullName: String, email: String, password: String)`
+```kotlin
+fun register(fullName: String, email: String, password: String) {
+    viewModelScope.launch {
+        // TODO: Implement registration logic
+        // 1. Call authRepository.register()
+        // 2. Handle success/failure
+        // 3. Update register state
+        // 4. Handle validation errors
+    }
+}
+```
+**Key Learning Points:**
+- MutableState for UI state management
+- Form validation techniques
+- Session management coordination
+- Error handling for authentication
+
+**Testing Focus:**
+- Test successful login flow
+- Test registration validation
+- Test error handling scenarios
+- Test state updates
+
+---
+
+### 🔹 **Swarit Dixit** - Task Management ViewModel Functions
+
+**Learning Focus:**
+- List state management with LiveData
+- CRUD operations in ViewModels
+- Task status management
+- Background operations with coroutines
+
+**Functions to Implement:**
+
+#### 1. `loadTasks()`
+```kotlin
+fun loadTasks() {
+    viewModelScope.launch {
+        // TODO: Implement task loading
+        // 1. Show loading state (optional)
+        // 2. Call taskRepository.getTasks()
+        // 3. Update _tasks LiveData
+        // 4. Handle errors appropriately
+    }
+}
+```
+
+#### 2. `addTask(task: Task)`
+```kotlin
+fun addTask(task: Task) {
+    viewModelScope.launch {
+        // TODO: Implement task addition
+        // 1. Call taskRepository.addTask()
+        // 2. If successful, reload tasks
+        // 3. Handle errors and show appropriate messages
+    }
+}
+```
+
+#### 3. `updateTask(task: Task, taskId: Int)`
+```kotlin
+fun updateTask(task: Task, taskId: Int) {
+    viewModelScope.launch {
+        // TODO: Implement task update
+        // 1. Call taskRepository.updateTask()
+        // 2. Reload tasks on success
+        // 3. Handle update failures
+    }
+}
+```
+
+#### 4. `deleteTask(taskId: Int)`
+```kotlin
+fun deleteTask(taskId: Int) {
+    viewModelScope.launch {
+        // TODO: Implement task deletion
+        // 1. Call taskRepository.deleteTask()
+        // 2. Reload tasks on success
+        // 3. Handle deletion errors
+    }
+}
+```
+
+#### 5. Task Status Management
+```kotlin
+fun markTaskAsCompleted(taskId: Int) {
+    viewModelScope.launch {
+        // TODO: Mark task as completed
+        // 1. Call taskRepository.markTaskAsCompleted()
+        // 2. Reload tasks to reflect changes
+        // 3. Handle status update failures
+    }
+}
+
+fun moveTaskToInProgress(taskId: Int) {
+    viewModelScope.launch {
+        // TODO: Move task to in-progress
+        // 1. Call taskRepository.markTaskAsInProgress()
+        // 2. Reload tasks
+        // 3. Handle errors
+    }
+}
+```
+**Key Learning Points:**
+- LiveData for reactive list updates
+- CRUD operation patterns
+- Status management strategies
+- Efficient data reloading
+
+**Testing Focus:**
+- Test task CRUD operations
+- Test status change operations
+- Test data consistency
+- Test error scenarios
+
+---
+
+### 🔹 **Akshat Gupta** - Notes Management ViewModel Functions
+
+**Learning Focus:**
+- Content management with ViewModels
+- Individual item operations
+- Search functionality implementation
+- Advanced LiveData transformations
+
+**Functions to Implement:**
+
+#### 1. `loadNotes()`
+```kotlin
+fun loadNotes() {
+    viewModelScope.launch {
+        // TODO: Implement notes loading
+        // 1. Call notesRepository.getNotes()
+        // 2. Update _notes LiveData
+        // 3. Handle loading errors
+    }
+}
+```
+
+#### 2. `addNote(note: Note)`
+```kotlin
+fun addNote(note: Note) {
+    viewModelScope.launch {
+        // TODO: Implement note addition
+        // 1. Call notesRepository.addNote()
+        // 2. Reload notes on success
+        // 3. Handle creation errors
+    }
+}
+```
+
+#### 3. `updateNote(note: Note, noteId: Int)`
+```kotlin
+fun updateNote(note: Note, noteId: Int) {
+    viewModelScope.launch {
+        // TODO: Implement note update
+        // 1. Call notesRepository.updateNote()
+        // 2. Reload notes
+        // 3. Handle update failures
+    }
+}
+```
+
+#### 4. `deleteNote(noteId: Int)`
+```kotlin
+fun deleteNote(noteId: Int) {
+    viewModelScope.launch {
+        // TODO: Implement note deletion
+        // 1. Call notesRepository.deleteNoteById()
+        // 2. Reload notes on success
+        // 3. Handle deletion errors
+    }
+}
+```
+
+
+**Key Learning Points:**
+- Individual item management
+- LiveData transformations
+
+**Testing Focus:**
+- Test note CRUD operations
+- Test individual note retrieval
+---
+
+## Integration with UI (Compose)
+
+### Observing LiveData in Compose
+```kotlin
+@Composable
+fun TaskScreen(viewModel: TaskifyViewModel) {
+    val tasks by viewModel.tasks.observeAsState(emptyList())
+    val isLoading by viewModel.isLoading.observeAsState(false)
+    
+    LazyColumn {
+        items(tasks) { task ->
+            TaskItem(
+                task = task,
+                onTaskClick = { viewModel.updateTask(it, task.id!!) },
+                onDeleteClick = { viewModel.deleteTask(task.id!!) }
+            )
+        }
+    }
+}
+```
+
+### Handling MutableState in Compose
+```kotlin
+@Composable
+fun LoginScreen(viewModel: TaskifyViewModel) {
+    val loginSuccess by viewModel.login
+    
+    if (loginSuccess) {
+        // Navigate to main screen
+        LaunchedEffect(loginSuccess) {
+            // Handle navigation
+            viewModel.resetStates()
         }
     }
 }
@@ -400,50 +722,90 @@ class TaskViewModel(private val taskRepository: TaskRepository) : ViewModel() {
 
 ## Error Handling Best Practices
 
-Implement proper error handling in your repositories:
-
+### Repository Error Handling
 ```kotlin
-sealed class NetworkResult<T> {
-    data class Success<T>(val data: T) : NetworkResult<T>()
-    data class Error<T>(val message: String) : NetworkResult<T>()
-    data class Loading<T>(val isLoading: Boolean = true) : NetworkResult<T>()
+try {
+    val result = repository.getData()
+    _data.value = result
+    clearError()
+} catch (e: NetworkException) {
+    showError("Network error: Please check your connection")
+} catch (e: AuthException) {
+    showError("Authentication failed: Please login again")
+} catch (e: Exception) {
+    showError("An unexpected error occurred")
 }
+```
 
-// Usage in repository
-suspend fun getTasksWithResult(): NetworkResult<List<Task>> {
-    return try {
-        val response = ktorHttpClient.get(Constants.BASE_URL + "task/all")
-        if (response.status.isSuccess()) {
-            NetworkResult.Success(response.body<List<Task>>())
-        } else {
-            NetworkResult.Error("Failed to fetch tasks: ${response.status.value}")
+### UI Error Display
+```kotlin
+errorMessage.value?.let { message ->
+    Snackbar(
+        action = {
+            TextButton(onClick = { viewModel.clearError() }) {
+                Text("Dismiss")
+            }
         }
-    } catch (e: Exception) {
-        NetworkResult.Error("Network error: ${e.message}")
+    ) {
+        Text(message)
     }
 }
 ```
 
-## Testing Your Implementation
 
-Basic testing approach for repositories:
+## Weekly Deliverables
 
-```kotlin
-@Test
-fun `test successful task retrieval`() = runTest {
-    // Given
-    val mockTasks = listOf(
-        Task(1, "Test Task", "Description", "HIGH", "TODO")
-    )
-    
-    // When
-    val result = taskRepository.getTasks()
-    
-    // Then
-    assertEquals(1, result.size)
-    assertEquals("Test Task", result[0].title)
-}
-```
+### Individual Implementation (Each Mentee)
+1. **Complete assigned ViewModel functions**
+2. **Implement proper error handling**
+3. **Add comprehensive unit tests**
+4. **Document your implementation**
+5. **Create integration examples**
+
+### Code Review Checklist
+- [ ] All functions implemented with proper coroutine usage
+- [ ] Error handling implemented for all operations
+- [ ] LiveData/MutableState used correctly
+- [ ] No memory leaks or resource leaks
+- [ ] Proper separation of concerns
+- [ ] Unit tests cover all major scenarios
+
+### Integration Testing
+- [ ] ViewModel connects properly with repositories
+- [ ] UI updates correctly when state changes
+- [ ] Error states are handled gracefully
+- [ ] Loading states provide good UX
+- [ ] Navigation works with state changes
+
+## Learning Resources
+
+### Essential Reading
+- [ViewModel Overview](https://developer.android.com/topic/libraries/architecture/viewmodel)
+- [LiveData Overview](https://developer.android.com/topic/libraries/architecture/livedata)
+- [State in Jetpack Compose](https://developer.android.com/jetpack/compose/state)
+- [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html)
+
+### Video Tutorials
+- [Android Architecture Components](https://www.youtube.com/watch?v=pErTyQpA390)
+- [ViewModels and LiveData](https://www.youtube.com/watch?v=OMcDk2_4LSk)
+- [State Management in Compose](https://www.youtube.com/watch?v=mymWGMy9pYI)
+
+### Documentation
+- [ViewModelScope Documentation](https://developer.android.com/topic/libraries/architecture/coroutines#viewmodelscope)
+- [Testing ViewModels](https://developer.android.com/topic/libraries/architecture/viewmodel#testing)
+
+## Success Criteria
+
+By the end of this week, you should be able to:
+- Implement complex ViewModel functions with proper state management
+- Handle user interactions through ViewModel methods
+- Manage UI state using LiveData and MutableState
+- Implement proper error handling and loading states
+- Test ViewModel functionality thoroughly
+- 
+Remember: The goal is not just to make it work, but to understand the underlying patterns and architecture principles. Focus on learning how state flows through your app and how different components communicate with each other.
+
+Good luck with your ViewModel implementation! 🚀
 
 ## Security Considerations
 
