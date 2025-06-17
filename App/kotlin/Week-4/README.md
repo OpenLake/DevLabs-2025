@@ -261,14 +261,13 @@ class SessionManager(context: Context) {
 
 Each mentee will implement one repository following the provided structure:
 
-### 🔹 **[Mentee Name 1]** - `AuthRepository`
+### 🔹 **Shivangshu Sharma** - `AuthRepository`
 Implement user authentication and registration functionality.
 
 **Responsibilities:**
 - User registration with validation
 - User login and token management
 - Logout functionality
-- Token refresh handling
 
 **Files to create:**
 ```
@@ -291,7 +290,7 @@ utils/
 - Input validation
 - Clear success/failure responses
 
-### 🔹 **[Mentee Name 2]** - `TaskRepository`
+### 🔹 **Swarit Dixit** - `TaskRepository`
 Implement task management operations.
 
 **Responsibilities:**
@@ -320,7 +319,7 @@ data/repository/
 - Error handling for CRUD operations
 - Data consistency
 
-### 🔹 **[Mentee Name 3]** - `NotesRepository`
+### 🔹 **Akshat Gupta** - `NotesRepository`
 Implement notes management functionality.
 
 **Responsibilities:**
